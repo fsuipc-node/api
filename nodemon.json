@@ -1,0 +1,19 @@
+{
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "watch": [
+    "tsconfig.json",
+    "tsconfig.app.json",
+    "tslint.json",
+    "src/**/*.ts"
+  ],
+  "execMap": {
+    "ts": "ts-node --files --type-check --project tsconfig.app.json -r tsconfig-paths/register"
+  },
+  "events": {
+    "start": "tslint -p tsconfig.app.json -c tslint.json",
+    "restart": "tslint -p tsconfig.app.json -c tslint.json"
+  },
+  "delay": "500"
+}

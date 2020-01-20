@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`mappings list should import all mappings 1`] = `
+Object {
+  "engineType": [Function],
+  "ftsecToKt": [Function],
+  "ktToFtsec": [Function],
+  "lightsMapping": [Function],
+  "nearestAirportsIds": [Function],
+  "precipitationType": [Function],
+  "runwaySurfaceCondition": [Function],
+  "seasons": [Function],
+}
+`;

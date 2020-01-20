@@ -1,0 +1,30 @@
+{
+  "extends": "../tsconfig.json",
+  "include": [
+    "./api.ts",
+    "**/*.d.ts"
+  ],
+  "compilerOptions": {
+    "declaration": true,
+    "outDir": "../dist",
+    "module": "commonjs",
+    "baseUrl": "./",
+    "paths": {
+      "@shared": ["shared/index"],
+      "@shared/*": ["shared/*"],
+      "@offsets": ["lib/offsets/index"],
+      "@offsets/*": ["lib/offsets/*"],
+      "@mappings": ["lib/convert/mappings/index"],
+      "@mappings/*": ["lib/convert/mappings/*"],
+      "@convert": ["lib/convert/index"],
+      "@convert/*": ["lib/convert/*"]
+    }
+  },
+  "exclude": [
+    "**/*.spec.ts",
+    "**/*.test.ts",
+    "**/*.stub.ts",
+    "**/*.mock.ts",
+    "node_modules"
+  ]
+}

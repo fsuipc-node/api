@@ -1,0 +1,30 @@
+{
+  "extends": "../tsconfig.json",
+  "include": [
+    "**/*.spec.ts",
+    "**/*.d.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "compilerOptions": {
+    "outDir": "../dist/spec",
+    "module": "commonjs",
+    "baseUrl": "./",
+    "allowJs": true,
+    "types": [
+      "jest",
+      "node"
+    ],
+    "paths": {
+      "@shared": ["../src/shared/index"],
+      "@shared/*": ["../src/shared/*"],
+      "@offsets": ["../src/lib/offsets/index"],
+      "@offsets/*": ["../src/lib/offsets/*"],
+      "@mappings": ["../src/lib/convert/mappings/index"],
+      "@mappings/*": ["../src/lib/convert/mappings/*"],
+      "@convert": ["../src/lib/convert/index"],
+      "@convert/*": ["../src/lib/convert/*"]
+    }
+  }
+}

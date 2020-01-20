@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`offset - plane/engines offsets list should have required properties 1`] = `
+Object {
+  "activeEngine": Offset {
+    "category": "engine",
+    "convert": undefined,
+    "description": "active engine pattern",
+    "length": 1,
+    "mapping": undefined,
+    "name": "activeEngine",
+    "permission": "rw",
+    "type": 12,
+    "value": 2184,
+  },
+  "engineType": Offset {
+    "category": "engine",
+    "convert": "engineType",
+    "description": "engine type",
+    "length": undefined,
+    "mapping": true,
+    "name": "engineType",
+    "permission": "r",
+    "type": 0,
+    "value": 1545,
+  },
+  "hasCarbHeat": Offset {
+    "category": "engine",
+    "convert": "!!{VAL}",
+    "description": "has carb heat",
+    "length": undefined,
+    "mapping": undefined,
+    "name": "hasCarbHeat",
+    "permission": "r",
+    "type": 6,
+    "value": 1924,
+  },
+  "hasMixtureControl": Offset {
+    "category": "engine",
+    "convert": "!!{VAL}",
+    "description": "has mixture control",
+    "length": undefined,
+    "mapping": undefined,
+    "name": "hasMixtureControl",
+    "permission": "r",
+    "type": 6,
+    "value": 1920,
+  },
+}
+`;

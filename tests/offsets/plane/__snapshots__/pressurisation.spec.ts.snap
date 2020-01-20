@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`offset - plane/pressurisation offsets list should have required properties 1`] = `
+Object {
+  "pressCabinAlt": Offset {
+    "category": "pressurisation",
+    "convert": undefined,
+    "description": "pressurisation: cabin altitude - ft",
+    "length": undefined,
+    "mapping": undefined,
+    "name": "pressCabinAlt",
+    "permission": "r",
+    "type": 3,
+    "value": 792,
+  },
+  "pressCabinAltChange": Offset {
+    "category": "pressurisation",
+    "convert": undefined,
+    "description": "pressurisation: cabin altitude change set - ft/s",
+    "length": undefined,
+    "mapping": undefined,
+    "name": "pressCabinAltChange",
+    "permission": "r",
+    "type": 9,
+    "value": 800,
+  },
+  "pressCabinAltPressDiff": Offset {
+    "category": "pressurisation",
+    "convert": undefined,
+    "description": "pressurisation: cabin altitude change set - lb/sqft",
+    "length": undefined,
+    "mapping": undefined,
+    "name": "pressCabinAltPressDiff",
+    "permission": "r",
+    "type": 9,
+    "value": 804,
+  },
+  "pressCabinAltTarget": Offset {
+    "category": "pressurisation",
+    "convert": undefined,
+    "description": "pressurisation: target cabin altitude - ft",
+    "length": undefined,
+    "mapping": undefined,
+    "name": "pressCabinAltTarget",
+    "permission": "r",
+    "type": 3,
+    "value": 796,
+  },
+  "pressDumpSwitch": Offset {
+    "category": "pressurisation",
+    "convert": "!!{VAL}",
+    "description": "pressurisation: dump switch",
+    "length": undefined,
+    "mapping": undefined,
+    "name": "pressDumpSwitch",
+    "permission": "rw",
+    "type": 6,
+    "value": 808,
+  },
+}
+`;

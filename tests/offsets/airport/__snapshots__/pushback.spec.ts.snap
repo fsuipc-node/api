@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`offset - airport/pushback offsets list should have required properties 1`] = `
+Object {
+  "pushbackAngle": Offset {
+    "category": "pushback",
+    "convert": undefined,
+    "description": "pushback angle - radians",
+    "length": undefined,
+    "mapping": undefined,
+    "name": "pushbackAngle",
+    "permission": "r",
+    "type": 9,
+    "value": 820,
+  },
+  "pushbackWaitFlag": Offset {
+    "category": "pushback",
+    "convert": "!!{VAL}",
+    "description": "pushback wait flag",
+    "length": undefined,
+    "mapping": undefined,
+    "name": "pushbackWaitFlag",
+    "permission": "r",
+    "type": 5,
+    "value": 836,
+  },
+  "pushbackXContact": Offset {
+    "category": "pushback",
+    "convert": undefined,
+    "description": "pushback X contact - ft",
+    "length": undefined,
+    "mapping": undefined,
+    "name": "pushbackXContact",
+    "permission": "r",
+    "type": 9,
+    "value": 824,
+  },
+  "pushbackYContact": Offset {
+    "category": "pushback",
+    "convert": undefined,
+    "description": "pushback Y contact - ft",
+    "length": undefined,
+    "mapping": undefined,
+    "name": "pushbackYContact",
+    "permission": "r",
+    "type": 9,
+    "value": 828,
+  },
+  "pushbackZContact": Offset {
+    "category": "pushback",
+    "convert": undefined,
+    "description": "pushback Z contact - ft",
+    "length": undefined,
+    "mapping": undefined,
+    "name": "pushbackZContact",
+    "permission": "r",
+    "type": 9,
+    "value": 832,
+  },
+}
+`;

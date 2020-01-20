@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`offset - plane/icing offsets list should have required properties 1`] = `
+Object {
+  "pitotIce": Offset {
+    "category": "icing",
+    "convert": "+({VAL} / 16384 * 100).toFixed(2)",
+    "description": "structural ice - decimal percent",
+    "length": undefined,
+    "mapping": undefined,
+    "name": "pitotIce",
+    "permission": "r",
+    "type": 5,
+    "value": 842,
+  },
+  "structuralIce": Offset {
+    "category": "icing",
+    "convert": "+({VAL} / 16384 * 100).toFixed(2)",
+    "description": "structural ice - decimal percent",
+    "length": undefined,
+    "mapping": undefined,
+    "name": "structuralIce",
+    "permission": "r",
+    "type": 5,
+    "value": 840,
+  },
+}
+`;

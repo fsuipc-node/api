@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`offset - plane/controls offsets list should have required properties 1`] = `
+Object {
+  "autoRudder": Offset {
+    "category": "controls",
+    "convert": "!!{VAL}",
+    "description": "auto coordination",
+    "length": undefined,
+    "mapping": undefined,
+    "name": "autoRudder",
+    "permission": "rw",
+    "type": 2,
+    "value": 632,
+  },
+  "leftAileronDeflection": Offset {
+    "category": "controls",
+    "convert": undefined,
+    "description": "left aileron deflection - radians",
+    "length": undefined,
+    "mapping": undefined,
+    "name": "leftAileronDeflection",
+    "permission": "r",
+    "type": 8,
+    "value": 944,
+  },
+  "rightAileronDeflection": Offset {
+    "category": "controls",
+    "convert": undefined,
+    "description": "right aileron deflection - radians",
+    "length": undefined,
+    "mapping": undefined,
+    "name": "rightAileronDeflection",
+    "permission": "r",
+    "type": 8,
+    "value": 952,
+  },
+  "rotorClutchSwitch": Offset {
+    "category": "controls",
+    "convert": "!!{VAL}",
+    "description": "rotor clutch switch",
+    "length": undefined,
+    "mapping": undefined,
+    "name": "rotorClutchSwitch",
+    "permission": "rw",
+    "type": 0,
+    "value": 2185,
+  },
+}
+`;

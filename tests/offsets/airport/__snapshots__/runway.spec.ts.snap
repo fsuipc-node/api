@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`offset - airport/runway offsets list should have required properties 1`] = `
+Object {
+  "runwaySurfaceCondition": Offset {
+    "category": "runway",
+    "convert": "runwaySurfaceCondition",
+    "description": "surface condition",
+    "length": undefined,
+    "mapping": true,
+    "name": "runwaySurfaceCondition",
+    "permission": "r",
+    "type": 0,
+    "value": 838,
+  },
+  "runwaySurfaceConditionValid": Offset {
+    "category": "runway",
+    "convert": "!!{VAL}",
+    "description": "surface condition valid flag",
+    "length": undefined,
+    "mapping": undefined,
+    "name": "runwaySurfaceConditionValid",
+    "permission": "r",
+    "type": 0,
+    "value": 839,
+  },
+}
+`;

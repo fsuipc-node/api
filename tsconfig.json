@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "allowJs": true,
+    "sourceMap": true,
+    "strict": true,
+    "strictNullChecks": false,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "noImplicitAny": false,
+    "target": "es2017",
+    "typeRoots": [
+			"node_modules/@types"
+    ],
+    "types": [
+      "jest",
+      "node"
+    ],
+    "lib": [
+      "es2019"
+    ],
+    "paths": {
+      "@shared": ["src/shared/index"],
+      "@shared/*": ["src/shared/*"],
+      "@offsets": ["src/lib/offsets/index"],
+      "@offsets/*": ["src/lib/offsets/*"],
+      "@mappings": ["src/lib/convert/mappings/index"],
+      "@mappings/*": ["src/lib/convert/mappings/*"],
+      "@convert": ["src/lib/convert/index"],
+      "@convert/*": ["src/lib/convert/*"]
+    }
+  }
+}
