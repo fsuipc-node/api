@@ -8,6 +8,7 @@ const pkgData = require(ORIG_PKG_PATH);
 
 delete pkgData.scripts;
 delete pkgData.devDependencies;
+delete pkgData.dependencies;
 
 fs.writeFileSync(DEST, JSON.stringify(pkgData, null, 2), (err) => {
   if (err) throw err;

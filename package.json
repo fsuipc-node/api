@@ -24,7 +24,8 @@
     "test": "jest --watch",
     "test:ci": "jest --coverage",
     "tslint": "tslint -p src/tsconfig.app.json -c tslint.json && tslint -p tests/tsconfig.spec.json -c tslint.json",
-    "changelog": "npx conventional-changelog -p angular -i CHANGELOG.md -s"
+    "changelog": "npx conventional-changelog -p angular -i CHANGELOG.md -s",
+    "changelog:generate": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
   },
   "dependencies": {
     "fsuipc": "0.3.0",
