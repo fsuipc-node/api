@@ -22,7 +22,7 @@ export const applyConversion = (offset: Offset, rawOffsetValue: RawOffsetValue):
     }
 
     const convertExpression: string = offset.convert.replace(
-      '{VAL}',
+      new RegExp(/{VAL}/g),
       Array.isArray(rawOffsetValue)
         ? `${JSON.stringify(rawOffsetValue)}`
         : rawOffsetValue.toString()

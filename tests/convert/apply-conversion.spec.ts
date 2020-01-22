@@ -13,6 +13,7 @@ jest.mock('../../src/lib/convert/mappings', () => ({
 const VALUE = 123;
 const ARRAY = [123, 456];
 const EXPECTED_RESULT_ARRAY = [124, 457];
+const EXPECTED_RESULT_MULTIPLE = VALUE + VALUE;
 const OFFSET_NO_CONVERT = new Offset({
   name: 'someOffset',
 });
@@ -34,16 +35,25 @@ const OFFSET_WITH_ARRAY_CONVERT = new Offset({
   name: 'someOffsetWithConvert',
   convert: '({VAL}).map(val => val + 1)',
 });
+const OFFSET_WITH_MULTIPLE_VAL_USAGE = new Offset({
+  name: 'someOffsetWithConvert',
+  convert: '{VAL} + {VAL}',
+});
 const OFFSET_WITH_NON_STRING_CONVERT = new Offset({
   name: 'someOffsetWithConvert',
   convert: (() => { let something; }) as any,
 });
 const EXPECTED_EXPRESSION_ARRAY = '([123,456]).map(val => val + 1)';
 const EXPECTED_EXPRESSION_SIMPLE = '!!123';
+const EXPECTED_EXPRESSION_MULTIPLE = '123 + 123';
 
 const mockRun = jest.fn().mockImplementation((expression) => {
   if (expression === EXPECTED_EXPRESSION_ARRAY) {
     return EXPECTED_RESULT_ARRAY;
+  }
+
+  if (expression === EXPECTED_EXPRESSION_MULTIPLE) {
+    return EXPECTED_RESULT_MULTIPLE;
   }
 
   return true;
@@ -126,6 +136,19 @@ describe('apply conversion', () => {
         it('should evaluate expression in safe VM', () => {
           expect(mockRun).toHaveBeenCalledWith(EXPECTED_EXPRESSION_SIMPLE);
           expect(result).toBe(true);
+        });
+      });
+
+      describe('when expression has multiple value usage', () => {
+        let result;
+
+        beforeEach(() => {
+          result = applyConversion(OFFSET_WITH_MULTIPLE_VAL_USAGE, VALUE);
+        });
+
+        it('should replace all occurences of value', () => {
+          expect(mockRun).toHaveBeenCalledWith(EXPECTED_EXPRESSION_MULTIPLE);
+          expect(result).toEqual(246);
         });
       });
     });

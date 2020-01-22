@@ -36,7 +36,7 @@ describe('offset - position-attitude/position-attitude', () => {
   offsetsTestCases.forEach(testedOffset => {
     describe(testedOffset.name, () => {
       it('should convert data properly', () => {
-        const convertExpression = offsets[testedOffset.name].convert.replace('{VAL}', testedOffset.value.toString());
+        const convertExpression = offsets[testedOffset.name].convert.replace(new RegExp(/{VAL}/g), testedOffset.value.toString());
 
         // tslint:disable-next-line:no-eval
         expect(eval(convertExpression)).toEqual(testedOffset.expectedResult);
