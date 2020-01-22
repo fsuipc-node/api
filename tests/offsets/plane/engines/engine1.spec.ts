@@ -29,10 +29,6 @@ describe('offset - plane/engines/engine1', () => {
     { name: 'engine1ITT', value: 3276800, expectedResult: 200 },
     { name: 'engine1Torque', value: 8192, expectedResult: 50 },
     { name: 'engine1FuelPres', value: 288, expectedResult: 2 },
-    { name: 'engine1ElectricalLoad', value: 8192, expectedResult: 50 },
-    { name: 'engine1TransmOilPres', value: 3276800, expectedResult: 200 },
-    { name: 'engine1TransmOilTemp', value: 3276800, expectedResult: 200 },
-    { name: 'engine1RotorRPM', value: 8192, expectedResult: 50 },
   ];
 
   describe('offsets list', () => {
