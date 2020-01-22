@@ -6,6 +6,7 @@ describe('offset - plane/helicopter', () => {
     { name: 'rotorLateralTrim', value: 13107, expectedResult: 80 },
     { name: 'governorSwitch', value: 0, expectedResult: false },
     { name: 'governorSwitch', value: 1, expectedResult: true },
+    { name: 'helicopterEngine1RotorRPM', value: 8192, expectedResult: 50 },
   ];
 
   describe('offsets list', () => {
