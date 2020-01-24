@@ -16,6 +16,7 @@ import { pressurisation } from './plane/pressurisation';
 import { icing } from './plane/icing';
 import { engines } from './plane/engines';
 import { autopilot } from './plane/autopilot';
+import { failure } from './failure/failure';
 
 export const OFFSETS: OffsetList  = {
   // Position and Attitude
@@ -31,6 +32,9 @@ export const OFFSETS: OffsetList  = {
   // Environment
   ...environment,
   ...weather,
+
+  // Failures
+  ...failure,
 
   // Plane
   ...plane,

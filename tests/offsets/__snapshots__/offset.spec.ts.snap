@@ -2345,6 +2345,17 @@ Object {
     "type": 6,
     "value": 1408,
   },
+  "hydFailure": Offset {
+    "category": "failure",
+    "convert": "{VAL} ? 1 : 0",
+    "description": "hydraulic failure",
+    "length": undefined,
+    "mapping": undefined,
+    "name": "hydFailure",
+    "permission": "w",
+    "type": 0,
+    "value": 2914,
+  },
   "ias": Offset {
     "category": "position_attitude",
     "convert": "Math.floor({VAL} / 128)",

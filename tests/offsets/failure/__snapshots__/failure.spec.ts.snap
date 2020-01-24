@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`offset - plane/failures offsets list should have required properties 1`] = `
+Object {
+  "hydFailure": Offset {
+    "category": "failure",
+    "convert": "{VAL} ? 1 : 0",
+    "description": "hydraulic failure",
+    "length": undefined,
+    "mapping": undefined,
+    "name": "hydFailure",
+    "permission": "w",
+    "type": 0,
+    "value": 2914,
+  },
+}
+`;
