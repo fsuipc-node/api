@@ -4,6 +4,11 @@ import { OffsetCategory } from '@shared/offset-category';
 import { OffsetList } from '@shared/offset-list';
 import { Offset } from '@shared/offset';
 
+import { engine1 } from './engines/engine1';
+import { engine2 } from './engines/engine2';
+import { engine3 } from './engines/engine3';
+import { engine4 } from './engines/engine4';
+
 export const engines: OffsetList = {
   engineType: new Offset({
     value: 0x609,
@@ -42,4 +47,8 @@ export const engines: OffsetList = {
     length: 1,
     permission: 'rw',
   }),
+  ...engine1,
+  ...engine2,
+  ...engine3,
+  ...engine4,
 };
