@@ -2,6 +2,17 @@
 
 exports[`offsets list should resolve full list 1`] = `
 Object {
+  "ADFFailure": Offset {
+    "category": "failure",
+    "convert": "typeof {VAL} === \`boolean\` ? {VAL} ? 1 : 0 : !!{VAL}",
+    "description": "ADF failure - 0=left 1=right 2=total",
+    "length": undefined,
+    "mapping": undefined,
+    "name": "ADFFailure",
+    "permission": "rw",
+    "type": 0,
+    "value": 2916,
+  },
   "APUGeneratorActive": Offset {
     "category": "APU",
     "convert": "!!{VAL}",
@@ -67,6 +78,17 @@ Object {
     "permission": "rw",
     "type": 9,
     "value": 2908,
+  },
+  "ASIFailure": Offset {
+    "category": "failure",
+    "convert": "typeof {VAL} === \`boolean\` ? {VAL} ? 1 : 0 : !!{VAL}",
+    "description": "ADF failure - 0=left 1=right 2=total",
+    "length": undefined,
+    "mapping": undefined,
+    "name": "ASIFailure",
+    "permission": "rw",
+    "type": 0,
+    "value": 2917,
   },
   "activeEngine": Offset {
     "category": "engine",
@@ -496,6 +518,17 @@ Object {
     "permission": "r",
     "type": 6,
     "value": 708,
+  },
+  "brakeFailure": Offset {
+    "category": "failure",
+    "convert": "{VAL} === \`left\` ? 0 : {VAL} === \`right\` ? 1 : 2",
+    "description": "brake failure - 0=left 1=right 2=total",
+    "length": undefined,
+    "mapping": undefined,
+    "name": "brakeFailure",
+    "permission": "w",
+    "type": 0,
+    "value": 2915,
   },
   "clockHour": Offset {
     "category": "environment",

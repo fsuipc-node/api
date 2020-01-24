@@ -25,7 +25,9 @@ export const applyConversion = (offset: Offset, rawOffsetValue: RawOffsetValue):
       new RegExp(/{VAL}/g),
       Array.isArray(rawOffsetValue)
         ? `${JSON.stringify(rawOffsetValue)}`
-        : rawOffsetValue.toString()
+        : typeof rawOffsetValue === 'string'
+          ? `'${rawOffsetValue}'`
+          : rawOffsetValue.toString()
     );
 
     return new VM().run(convertExpression);
