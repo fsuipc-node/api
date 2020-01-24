@@ -29,7 +29,7 @@ export const engine3: OffsetList = {
     category: OffsetCategory.ENGINE,
     description: 'engine 3 prop lever - percent',
     convert: '{VAL} / 16384 * 100',
-    type: Type.UInt16,
+    type: Type.Int16,
     permission: 'rw',
   }),
   engine3StarterSwitchPosition: new Offset({
@@ -55,7 +55,7 @@ export const engine3: OffsetList = {
     category: OffsetCategory.ENGINE,
     description: 'engine 3 N2 - also helo RPM %',
     convert: '{VAL} / 16384 * 100',
-    type: Type.UInt16,
+    type: Type.Int16,
     permission: 'rw',
   }),
   engine3N1: new Offset({
@@ -108,7 +108,7 @@ export const engine3: OffsetList = {
     category: OffsetCategory.ENGINE,
     description: 'engine3 oil temp - celsius',
     convert: 'Math.round({VAL} * 140 / 16384)',
-    type: Type.UInt16,
+    type: Type.Int16,
     permission: 'r',
   }),
   engine3OilPres: new Offset({
@@ -126,7 +126,7 @@ export const engine3: OffsetList = {
     category: OffsetCategory.ENGINE,
     description: 'engine3 pressure ratio',
     convert: '{VAL} * 1.6 / 16384',
-    type: Type.UInt16,
+    type: Type.Int16,
     permission: 'r',
   }),
   engine3EGT: new Offset({
@@ -135,7 +135,7 @@ export const engine3: OffsetList = {
     category: OffsetCategory.ENGINE,
     description: 'engine3 exhaust gas temperature - Trust only on jet engine - celsius',
     convert: 'Math.round({VAL} * 860 / 16384)',
-    type: Type.UInt16,
+    type: Type.Int16,
     permission: 'r',
   }),
   engine3MP: new Offset({
@@ -152,7 +152,7 @@ export const engine3: OffsetList = {
     name: 'engine3RPMScaler',
     category: OffsetCategory.ENGINE,
     description: 'engine3 RPM Scaler - props: used to calculate RPM',
-    type: Type.UInt16,
+    type: Type.Int16,
     permission: 'r',
   }),
   engine3OilQuantity: new Offset({
@@ -161,7 +161,7 @@ export const engine3: OffsetList = {
     category: OffsetCategory.ENGINE,
     description: 'engine3 oil quantity - percent',
     convert: 'Math.round({VAL} / 16384 * 100)',
-    type: Type.UInt32,
+    type: Type.Int32,
     permission: 'r',
   }),
   engine3Vibration: new Offset({
@@ -170,7 +170,7 @@ export const engine3: OffsetList = {
     category: OffsetCategory.ENGINE,
     description: 'engine3 vibration',
     convert: 'Math.round({VAL} * 5 / 16384)',
-    type: Type.UInt32,
+    type: Type.Int32,
     permission: 'r',
   }),
   engine3HydPres: new Offset({
@@ -179,7 +179,7 @@ export const engine3: OffsetList = {
     category: OffsetCategory.ENGINE,
     description: 'engine3 hydraulic pressure - PSI',
     convert: '{VAL} / 4',
-    type: Type.UInt32,
+    type: Type.Int32,
     permission: 'r',
   }),
   engine3HydQuantity: new Offset({
@@ -188,7 +188,7 @@ export const engine3: OffsetList = {
     category: OffsetCategory.ENGINE,
     description: 'engine3 hydraulic quantity - percent',
     convert: '{VAL} / 16384 * 100',
-    type: Type.UInt32,
+    type: Type.Int32,
     permission: 'r',
   }),
   engine3CHT: new Offset({
@@ -205,7 +205,7 @@ export const engine3: OffsetList = {
     category: OffsetCategory.ENGINE,
     description: 'engine3 turbine temperature - C',
     convert: '{VAL} / 16384',
-    type: Type.UInt32,
+    type: Type.Int32,
     permission: 'r',
   }),
   engine3Torque: new Offset({
@@ -214,7 +214,7 @@ export const engine3: OffsetList = {
     category: OffsetCategory.ENGINE,
     description: 'engine3 torque - trust only for helo - percent',
     convert: '{VAL} / 16384 * 100',
-    type: Type.UInt32,
+    type: Type.Int32,
     permission: 'r',
   }),
   engine3FuelPres: new Offset({
@@ -223,7 +223,7 @@ export const engine3: OffsetList = {
     category: OffsetCategory.ENGINE,
     description: 'engine3 fuel pressure - PSI',
     convert: '{VAL} / 144',
-    type: Type.UInt32,
+    type: Type.Int32,
     permission: 'r',
   }),
   engine3FuelUsedSinceStart: new Offset({

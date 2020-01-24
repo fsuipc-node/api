@@ -32,7 +32,7 @@ Object {
     "mapping": undefined,
     "name": "engine3EGT",
     "permission": "r",
-    "type": 5,
+    "type": 2,
     "value": 2542,
   },
   "engine3Firing": Offset {
@@ -87,7 +87,7 @@ Object {
     "mapping": undefined,
     "name": "engine3FuelPres",
     "permission": "r",
-    "type": 6,
+    "type": 3,
     "value": 2600,
   },
   "engine3FuelUsedSinceStart": Offset {
@@ -109,7 +109,7 @@ Object {
     "mapping": undefined,
     "name": "engine3HydPres",
     "permission": "r",
-    "type": 6,
+    "type": 3,
     "value": 2568,
   },
   "engine3HydQuantity": Offset {
@@ -120,7 +120,7 @@ Object {
     "mapping": undefined,
     "name": "engine3HydQuantity",
     "permission": "r",
-    "type": 6,
+    "type": 3,
     "value": 2572,
   },
   "engine3ITT": Offset {
@@ -131,7 +131,7 @@ Object {
     "mapping": undefined,
     "name": "engine3ITT",
     "permission": "r",
-    "type": 6,
+    "type": 3,
     "value": 2592,
   },
   "engine3MP": Offset {
@@ -153,7 +153,7 @@ Object {
     "mapping": undefined,
     "name": "engine3MixtureLever",
     "permission": "rw",
-    "type": 5,
+    "type": 2,
     "value": 2496,
   },
   "engine3N1": Offset {
@@ -175,7 +175,7 @@ Object {
     "mapping": undefined,
     "name": "engine3N2",
     "permission": "rw",
-    "type": 5,
+    "type": 2,
     "value": 2502,
   },
   "engine3OilPres": Offset {
@@ -197,7 +197,7 @@ Object {
     "mapping": undefined,
     "name": "engine3OilQuantity",
     "permission": "r",
-    "type": 6,
+    "type": 3,
     "value": 2560,
   },
   "engine3OilTemp": Offset {
@@ -208,7 +208,7 @@ Object {
     "mapping": undefined,
     "name": "engine3OilTemp",
     "permission": "r",
-    "type": 5,
+    "type": 2,
     "value": 2536,
   },
   "engine3PressureRatio": Offset {
@@ -219,7 +219,7 @@ Object {
     "mapping": undefined,
     "name": "engine3PressureRatio",
     "permission": "r",
-    "type": 5,
+    "type": 2,
     "value": 2540,
   },
   "engine3PropLever": Offset {
@@ -252,7 +252,7 @@ Object {
     "mapping": undefined,
     "name": "engine3RPMScaler",
     "permission": "r",
-    "type": 5,
+    "type": 2,
     "value": 2552,
   },
   "engine3StarterSwitchPosition": Offset {
@@ -296,7 +296,7 @@ Object {
     "mapping": undefined,
     "name": "engine3Torque",
     "permission": "r",
-    "type": 6,
+    "type": 3,
     "value": 2596,
   },
   "engine3TorqueFtLb": Offset {
@@ -318,7 +318,7 @@ Object {
     "mapping": undefined,
     "name": "engine3Vibration",
     "permission": "r",
-    "type": 6,
+    "type": 3,
     "value": 2564,
   },
 }
