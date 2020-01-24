@@ -11,9 +11,11 @@ jest.mock('../../src/lib/convert/mappings', () => ({
 }));
 
 const VALUE = 123;
+const STRING = 'someString';
 const ARRAY = [123, 456];
 const EXPECTED_RESULT_ARRAY = [124, 457];
 const EXPECTED_RESULT_MULTIPLE = VALUE + VALUE;
+const EXPECTED_RESULT_STRING = `${STRING}--string`;
 const OFFSET_NO_CONVERT = new Offset({
   name: 'someOffset',
 });
@@ -31,6 +33,10 @@ const OFFSET_WITH_SIMPLE_CONVERT = new Offset({
   name: 'someOffsetWithConvert',
   convert: '!!{VAL}',
 });
+const OFFSET_WITH_STRING_CONVERT = new Offset({
+  name: 'someOffsetWithConvert',
+  convert: `{VAL} + '--string'`,
+});
 const OFFSET_WITH_ARRAY_CONVERT = new Offset({
   name: 'someOffsetWithConvert',
   convert: '({VAL}).map(val => val + 1)',
@@ -46,6 +52,7 @@ const OFFSET_WITH_NON_STRING_CONVERT = new Offset({
 const EXPECTED_EXPRESSION_ARRAY = '([123,456]).map(val => val + 1)';
 const EXPECTED_EXPRESSION_SIMPLE = '!!123';
 const EXPECTED_EXPRESSION_MULTIPLE = '123 + 123';
+const EXPECTED_EXPRESSION_STRING = `"'someString' + '--string'"`;
 
 const mockRun = jest.fn().mockImplementation((expression) => {
   if (expression === EXPECTED_EXPRESSION_ARRAY) {
@@ -54,6 +61,10 @@ const mockRun = jest.fn().mockImplementation((expression) => {
 
   if (expression === EXPECTED_EXPRESSION_MULTIPLE) {
     return EXPECTED_RESULT_MULTIPLE;
+  }
+
+  if (expression === EXPECTED_EXPRESSION_STRING) {
+    return EXPECTED_RESULT_STRING;
   }
 
   return true;
@@ -127,15 +138,30 @@ describe('apply conversion', () => {
       });
 
       describe('when value is not an array', () => {
-        let result;
+        describe('when value is a string', () => {
+          let result;
 
-        beforeEach(() => {
-          result = applyConversion(OFFSET_WITH_SIMPLE_CONVERT, VALUE);
+          beforeEach(() => {
+            result = applyConversion(OFFSET_WITH_STRING_CONVERT, STRING);
+          });
+
+          it('should evaluate expression in safe VM', () => {
+            expect(mockRun).toHaveBeenCalledWith(EXPECTED_EXPRESSION_STRING);
+            expect(result).toEqual(EXPECTED_RESULT_STRING);
+          });
         });
 
-        it('should evaluate expression in safe VM', () => {
-          expect(mockRun).toHaveBeenCalledWith(EXPECTED_EXPRESSION_SIMPLE);
-          expect(result).toBe(true);
+        describe('when value is not a string', () => {
+          let result;
+
+          beforeEach(() => {
+            result = applyConversion(OFFSET_WITH_SIMPLE_CONVERT, VALUE);
+          });
+
+          it('should evaluate expression in safe VM', () => {
+            expect(mockRun).toHaveBeenCalledWith(EXPECTED_EXPRESSION_SIMPLE);
+            expect(result).toBe(true);
+          });
         });
       });
 

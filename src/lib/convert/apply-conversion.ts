@@ -30,6 +30,10 @@ export const applyConversion = (offset: Offset, rawOffsetValue: RawOffsetValue):
           : rawOffsetValue.toString()
     );
 
-    return new VM().run(convertExpression);
+    return new VM().run(
+      typeof rawOffsetValue === 'string'
+        ? `"${convertExpression}"`
+        : convertExpression
+    );
   }
 };
