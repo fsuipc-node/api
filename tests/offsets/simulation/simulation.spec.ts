@@ -24,6 +24,10 @@ describe('offset - plane/simulation', () => {
     { name: 'videoRecording', value: 1, expectedResult: true },
     { name: 'crashed', value: 0, expectedResult: false },
     { name: 'crashed', value: 1, expectedResult: true },
+    { name: 'soundControl', value: 0, expectedResult: false },
+    { name: 'soundControl', value: 1, expectedResult: true },
+    { name: 'soundActive', value: 0, expectedResult: false },
+    { name: 'soundActive', value: 1, expectedResult: true },
   ];
 
   describe('offsets list', () => {

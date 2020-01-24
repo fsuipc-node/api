@@ -1,14 +1,8 @@
-import { engines as offsets } from '@offsets/plane/engines';
+import { fuel as offsets } from '@offsets/plane/fuel';
 
-describe('offset - plane/engines', () => {
+describe('offset - plane/fuel', () => {
   const offsetsTestCases = [
-    { name: 'hasMixtureControl', value: 0, expectedResult: false },
-    { name: 'hasMixtureControl', value: 1, expectedResult: true },
-    { name: 'hasCarbHeat', value: 0, expectedResult: false },
-    { name: 'hasCarbHeat', value: 1, expectedResult: true },
-    { name: 'throttleLowerLimit', value: -2048, expectedResult: -50 },
-    { name: 'throttleLowerLimit', value: 0, expectedResult: 0 },
-    { name: 'throttleLowerLimit', value: 8192, expectedResult: 50 },
+    { name: 'fuelWeight', value: 512, expectedResult: 2 },
   ];
 
   describe('offsets list', () => {

@@ -20,6 +20,7 @@ describe('offset - plane/plane', () => {
     { name: 'hasStrobes', value: 1, expectedResult: true },
     { name: 'hasToeBrakes', value: 0, expectedResult: false },
     { name: 'hasToeBrakes', value: 1, expectedResult: true },
+    { name: 'maxMach', value: 13200, expectedResult: 0.65 },
   ];
 
   describe('offsets list', () => {

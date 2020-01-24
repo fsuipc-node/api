@@ -138,4 +138,20 @@ export const cockpit: OffsetList = {
     type: Type.UInt16,
     permission: 'rw',
   }),
+  suctionPressure: new Offset({
+    value: 0xB18,
+    name: 'suctionPressure',
+    category: OffsetCategory.COCKPIT,
+    description: 'gyro suction - inHg',
+    type: Type.Double,
+    permission: 'r',
+  }),
+  bleedAirSourceControl: new Offset({
+    value: 0xB50,
+    name: 'bleedAirSourceControl',
+    category: OffsetCategory.COCKPIT,
+    description: '0=Min, 1=auto, 2=Off, 3=APU, 4=Engines - FSX A321: 0=Auto, 1=Shut (off), 2=APU, 3=Engines',
+    type: Type.Byte,
+    permission: 'rw',
+  }),
 };

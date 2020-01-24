@@ -39,4 +39,12 @@ export const controls: OffsetList = {
     type: Type.Byte,
     permission: 'rw',
   }),
+  propellerPitchControl: new Offset({
+    value: 0xAF0,
+    name: 'propellerPitchControl',
+    category: OffsetCategory.CONTROLS,
+    description: '0=fixed, 1=auto, 2=manual',
+    type: Type.UInt16,
+    permission: 'rw',
+  }),
 };

@@ -90,6 +90,17 @@ Object {
     "type": 6,
     "value": 1936,
   },
+  "maxMach": Offset {
+    "category": "plane",
+    "convert": "+({VAL} / 20438).toFixed(2)",
+    "description": "mach maximum operating - not FS2004",
+    "length": undefined,
+    "mapping": undefined,
+    "name": "maxMach",
+    "permission": "r",
+    "type": 3,
+    "value": 2828,
+  },
   "retractableGear": Offset {
     "category": "plane",
     "convert": "!!{VAL}",

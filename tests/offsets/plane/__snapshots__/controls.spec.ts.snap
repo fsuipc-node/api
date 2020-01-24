@@ -24,6 +24,17 @@ Object {
     "type": 8,
     "value": 944,
   },
+  "propellerPitchControl": Offset {
+    "category": "controls",
+    "convert": undefined,
+    "description": "0=fixed, 1=auto, 2=manual",
+    "length": undefined,
+    "mapping": undefined,
+    "name": "propellerPitchControl",
+    "permission": "rw",
+    "type": 5,
+    "value": 2800,
+  },
   "rightAileronDeflection": Offset {
     "category": "controls",
     "convert": undefined,
