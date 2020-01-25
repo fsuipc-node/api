@@ -10,6 +10,7 @@ describe('offset - plane/helicopter', () => {
     { name: 'helicopterEngine1TransmOilPres', value: 3276800, expectedResult: 200 },
     { name: 'helicopterEngine1TransmOilTemp', value: 3276800, expectedResult: 200 },
     { name: 'helicopterEngine1RotorRPM', value: 8192, expectedResult: 50 },
+    { name: 'helicopterPitchTrim', value: -16000, expectedResult: -98 },
   ];
 
   describe('offsets list', () => {

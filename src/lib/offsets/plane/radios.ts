@@ -413,4 +413,28 @@ export const radios: OffsetList = {
     convert: '+({VAL} * 3.28084).toFixed(2)',
     permission: 'r',
   }),
+  innerMarker: new Offset({
+    value: 0xBAC,
+    name: 'innerMarker',
+    category: OffsetCategory.RADIOS,
+    description: 'inner marker - activated when TRUE',
+    type: Type.Int16,
+    permission: 'r',
+  }),
+  middleMarker: new Offset({
+    value: 0xBAE,
+    name: 'middleMarker',
+    category: OffsetCategory.RADIOS,
+    description: 'middle marker - activated when TRUE',
+    type: Type.Int16,
+    permission: 'r',
+  }),
+  outerMarker: new Offset({
+    value: 0xBB0,
+    name: 'outerMarker',
+    category: OffsetCategory.RADIOS,
+    description: 'outer marker - activated when TRUE',
+    type: Type.Int16,
+    permission: 'r',
+  }),
 };

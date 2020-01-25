@@ -79,6 +79,17 @@ Object {
     "type": 6,
     "value": 2308,
   },
+  "helicopterPitchTrim": Offset {
+    "category": "controls",
+    "convert": "Math.round({VAL} / 16383 * 100)",
+    "description": "helicopter pitch trim",
+    "length": undefined,
+    "mapping": undefined,
+    "name": "helicopterPitchTrim",
+    "permission": "rw",
+    "type": 2,
+    "value": 3006,
+  },
   "rotorBreakApplication": Offset {
     "category": "helicopter",
     "convert": "Math.round({VAL} / 16384 * 100)",

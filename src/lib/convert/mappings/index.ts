@@ -5,6 +5,7 @@ import { seasons } from './seasons';
 import { ftsecToKt, ktToFtsec } from './units';
 import { engineType } from './engine-type';
 import { nearestAirportsIds } from './nearest-airports-ids';
+import { appliedBrakes} from './applied-brakes';
 
 export const MAPPINGS: { [key: string]: (_: any) => any } = {
   lightsMapping,
@@ -20,6 +21,7 @@ export const MAPPINGS: { [key: string]: (_: any) => any } = {
 
   // plane
   engineType,
+  appliedBrakes,
 
   // environment
   nearestAirportsIds,
@@ -31,3 +33,4 @@ export * from './precipitation-type';
 export * from './seasons';
 export * from './units';
 export * from './engine-type';
+export * from './applied-brakes';

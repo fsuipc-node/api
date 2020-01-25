@@ -128,4 +128,13 @@ export const helicopter: OffsetList = {
     type: Type.UInt32,
     permission: 'r',
   }),
+  helicopterPitchTrim: new Offset({
+    value: 0xBBE,
+    name: 'helicopterPitchTrim',
+    description: 'helicopter pitch trim',
+    category: OffsetCategory.CONTROLS,
+    convert: 'Math.round({VAL} / 16383 * 100)',
+    type: Type.Int16,
+    permission: 'rw',
+  }),
 };
