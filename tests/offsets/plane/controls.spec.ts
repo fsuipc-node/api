@@ -17,6 +17,10 @@ describe('offset - plane/controls', () => {
     { name: 'parkingBrake', value: 0, expectedResult: false },
     { name: 'parkingBrake', value: true, expectedResult: 32767 },
     { name: 'parkingBrake', value: false, expectedResult: 0 },
+    { name: 'spoilersArm', value: 0, expectedResult: false },
+    { name: 'spoilersArm', value: 1, expectedResult: true },
+    { name: 'spoilerLeftPosition', value: 16383, expectedResult: 100 },
+    { name: 'spoilerRightPosition', value: 16383, expectedResult: 100 },
   ];
 
   describe('offsets list', () => {

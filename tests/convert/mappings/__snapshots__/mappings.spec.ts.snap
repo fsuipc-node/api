@@ -11,5 +11,6 @@ Object {
   "precipitationType": [Function],
   "runwaySurfaceCondition": [Function],
   "seasons": [Function],
+  "spoilersControl": [Function],
 }
 `;

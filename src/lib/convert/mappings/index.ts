@@ -5,7 +5,8 @@ import { seasons } from './seasons';
 import { ftsecToKt, ktToFtsec } from './units';
 import { engineType } from './engine-type';
 import { nearestAirportsIds } from './nearest-airports-ids';
-import { appliedBrakes} from './applied-brakes';
+import { appliedBrakes } from './applied-brakes';
+import { spoilersControl } from './spoilers-control';
 
 export const MAPPINGS: { [key: string]: (_: any) => any } = {
   lightsMapping,
@@ -22,6 +23,7 @@ export const MAPPINGS: { [key: string]: (_: any) => any } = {
   // plane
   engineType,
   appliedBrakes,
+  spoilersControl,
 
   // environment
   nearestAirportsIds,
@@ -34,3 +36,4 @@ export * from './seasons';
 export * from './units';
 export * from './engine-type';
 export * from './applied-brakes';
+export * from './spoilers-control';
