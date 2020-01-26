@@ -1,3 +1,12 @@
+# [0.3.0](https://github.com/fsuipc-node/api/compare/0.2.0...0.3.0) (2020-01-26)
+
+
+### Features
+
+* add offsets up to 0xE92 ([#2](https://github.com/fsuipc-node/api/issues/2)) ([82941e8](https://github.com/fsuipc-node/api/commit/82941e8e71cf85995f9ca5a0c346f1f5c330524b))
+
+
+
 # [0.2.0](https://github.com/fsuipc-node/api/compare/0.1.0...0.2.0) (2020-01-24)
 
 
