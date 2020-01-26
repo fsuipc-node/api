@@ -83,17 +83,3 @@ export class FsuipcApi {
     );
   }
 }
-
-const fsuipcApi = new FsuipcApi(Simulator.FSX);
-
-fsuipcApi.init().then(() => {
-  fsuipcApi.listen(1000, [
-    'nav1BackCourseFlags',
-    'nav1Capabilities',
-  ]).subscribe((result) => {
-    // Use the result here
-    console.log(JSON.stringify(result));
-  });
-}).catch((e) =>
-  console.error(e)
-);
