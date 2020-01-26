@@ -36,5 +36,5 @@ jobs:
       - name: build:upload:artifacts
         uses: actions/upload-artifact@v1
         with:
-          name: fsuipc-api-${{ github.ref }}
+          name: fsuipc-api-release
           path: ${{ github.workspace }}/dist
