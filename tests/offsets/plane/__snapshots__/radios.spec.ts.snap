@@ -2,6 +2,17 @@
 
 exports[`offset - plane/radios offsets list should have required properties 1`] = `
 Object {
+  "adf1SignalStrength": Offset {
+    "category": "radios",
+    "convert": undefined,
+    "description": "ADF1 signal strength",
+    "length": undefined,
+    "mapping": undefined,
+    "name": "adf1SignalStrength",
+    "permission": "r",
+    "type": 6,
+    "value": 3100,
+  },
   "adf2ExtendedFreq": Offset {
     "category": "radios",
     "convert": undefined,
@@ -34,6 +45,17 @@ Object {
     "permission": "r",
     "type": 2,
     "value": 728,
+  },
+  "adf2SignalStrength": Offset {
+    "category": "radios",
+    "convert": undefined,
+    "description": "ADF2 signal strength",
+    "length": undefined,
+    "mapping": undefined,
+    "name": "adf2SignalStrength",
+    "permission": "r",
+    "type": 6,
+    "value": 3092,
   },
   "adfFreq": Offset {
     "category": "radios",
@@ -89,6 +111,17 @@ Object {
     "permission": "rw",
     "type": 5,
     "value": 888,
+  },
+  "dme1Distance": Offset {
+    "category": "simulation",
+    "convert": "+{VAL}",
+    "description": "DME1 distance - nautical miles",
+    "length": 5,
+    "mapping": undefined,
+    "name": "dme1Distance",
+    "permission": "r",
+    "type": 11,
+    "value": 3113,
   },
   "hasNav1": Offset {
     "category": "radios",

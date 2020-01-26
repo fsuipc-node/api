@@ -13,8 +13,19 @@ Object {
     "type": 0,
     "value": 2086,
   },
+  "helicopterBankTrim": Offset {
+    "category": "helicopter",
+    "convert": "Math.round({VAL} / 16383 * 100)",
+    "description": "helicopter bank trim - only when apply hello trim to both",
+    "length": undefined,
+    "mapping": undefined,
+    "name": "helicopterBankTrim",
+    "permission": "rw",
+    "type": 2,
+    "value": 3078,
+  },
   "helicopterEngine1ElectricalLoad": Offset {
-    "category": "engine",
+    "category": "helicopter",
     "convert": "{VAL} / 16384 * 100",
     "description": "engine1 electrical load - trust only for helo - percent",
     "length": undefined,
@@ -25,7 +36,7 @@ Object {
     "value": 2300,
   },
   "helicopterEngine1RPM": Offset {
-    "category": "engine",
+    "category": "helicopter",
     "convert": undefined,
     "description": "engine 1 RPM %",
     "length": undefined,
@@ -36,7 +47,7 @@ Object {
     "value": 2198,
   },
   "helicopterEngine1RPMUnscaled": Offset {
-    "category": "engine",
+    "category": "helicopter",
     "convert": undefined,
     "description": "engine 1 RPM unscalled - multiply by engineRPMScaler to obtain derivated RPM",
     "length": undefined,
@@ -47,7 +58,7 @@ Object {
     "value": 2200,
   },
   "helicopterEngine1RotorRPM": Offset {
-    "category": "engine",
+    "category": "helicopter",
     "convert": "{VAL} / 16384 * 100",
     "description": "engine1 rotor RPM - percent",
     "length": undefined,
@@ -58,7 +69,7 @@ Object {
     "value": 2312,
   },
   "helicopterEngine1TransmOilPres": Offset {
-    "category": "engine",
+    "category": "helicopter",
     "convert": "{VAL} / 16384",
     "description": "engine1 transmission oil pressure - trust only for helo - PSI",
     "length": undefined,
@@ -69,7 +80,7 @@ Object {
     "value": 2304,
   },
   "helicopterEngine1TransmOilTemp": Offset {
-    "category": "engine",
+    "category": "helicopter",
     "convert": "{VAL} / 16384",
     "description": "engine1 transmission oil temperature - trust only for helo - C",
     "length": undefined,
@@ -80,7 +91,7 @@ Object {
     "value": 2308,
   },
   "helicopterPitchTrim": Offset {
-    "category": "controls",
+    "category": "helicopter",
     "convert": "Math.round({VAL} / 16383 * 100)",
     "description": "helicopter pitch trim",
     "length": undefined,

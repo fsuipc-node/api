@@ -178,6 +178,17 @@ Object {
     "type": 5,
     "value": 1240,
   },
+  "unlimitedVisibility": Offset {
+    "category": "weather",
+    "convert": "+({VAL} / 1600).toFixed(2)",
+    "description": "unlimited visibility value - sm",
+    "length": undefined,
+    "mapping": undefined,
+    "name": "unlimitedVisibility",
+    "permission": "rw",
+    "type": 3,
+    "value": 3064,
+  },
   "windSurfaceTurbulenceGustSpeed": Offset {
     "category": "weather",
     "convert": "+({VAL}).toFixed(2)",

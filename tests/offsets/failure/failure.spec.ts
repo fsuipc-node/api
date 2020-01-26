@@ -1,4 +1,5 @@
 import { failure as offsets } from '@offsets/failure/failure';
+import { replaceOffsetExpressionValue } from '@convert/apply-conversion';
 
 describe('offset - plane/failures', () => {
   const offsetsTestCases = [
@@ -79,7 +80,7 @@ describe('offset - plane/failures', () => {
   offsetsTestCases.forEach(testedOffset => {
     describe(testedOffset.name, () => {
       it('should convert data properly', () => {
-        const convertExpression = offsets[testedOffset.name].convert.replace(new RegExp(/{VAL}/g), typeof testedOffset.value === 'string' ? `'${testedOffset.value}'` : testedOffset.value.toString());
+        const convertExpression = replaceOffsetExpressionValue(offsets[testedOffset.name], testedOffset.value);
 
         // tslint:disable-next-line:no-eval
         expect(eval(convertExpression)).toEqual(testedOffset.expectedResult);

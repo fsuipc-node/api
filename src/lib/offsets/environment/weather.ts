@@ -152,4 +152,13 @@ export const weather: OffsetList = {
     convert: '+({VAL} * 360 / 65536).toFixed(2)',
     permission: 'r',
   }),
+  unlimitedVisibility: new Offset({
+    value: 0xBF8,
+    name: 'unlimitedVisibility',
+    category: OffsetCategory.WEATHER,
+    description: 'unlimited visibility value - sm',
+    type: Type.Int32,
+    convert: '+({VAL} / 1600).toFixed(2)',
+    permission: 'rw',
+  }),
 };

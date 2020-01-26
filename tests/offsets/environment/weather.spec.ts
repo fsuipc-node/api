@@ -1,4 +1,5 @@
 import { weather as offsets } from '@offsets/environment/weather';
+import { replaceOffsetExpressionValue } from '@convert/apply-conversion';
 
 describe('offset - environment/weather', () => {
   const offsetsTestCases = [
@@ -10,6 +11,7 @@ describe('offset - environment/weather', () => {
     { name: 'metarCloudBaseHigh', value: 914, expectedResult: 2998.69 },
     { name: 'dewPoint', value: 512, expectedResult: 2 },
     { name: 'surfaceWindDirection', value: 32768, expectedResult: 180 },
+    { name: 'unlimitedVisibility', value: 3200, expectedResult: 2 },
   ];
 
   describe('offsets list', () => {
@@ -21,7 +23,7 @@ describe('offset - environment/weather', () => {
   offsetsTestCases.forEach(testedOffset => {
     describe(testedOffset.name, () => {
       it('should convert data properly', () => {
-        const convertExpression = offsets[testedOffset.name].convert.replace(new RegExp(/{VAL}/g), testedOffset.value.toString());
+        const convertExpression = replaceOffsetExpressionValue(offsets[testedOffset.name], testedOffset.value);
 
         // tslint:disable-next-line:no-eval
         expect(eval(convertExpression)).toEqual(testedOffset.expectedResult);

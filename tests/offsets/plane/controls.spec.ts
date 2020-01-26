@@ -1,4 +1,5 @@
 import { controls as offsets } from '@offsets/plane/controls';
+import { replaceOffsetExpressionValue } from '@convert/apply-conversion';
 
 describe('offset - plane/controls', () => {
   const offsetsTestCases = [
@@ -21,6 +22,23 @@ describe('offset - plane/controls', () => {
     { name: 'spoilersArm', value: 1, expectedResult: true },
     { name: 'spoilerLeftPosition', value: 16383, expectedResult: 100 },
     { name: 'spoilerRightPosition', value: 16383, expectedResult: 100 },
+    { name: 'flapsControl', value: 16383, expectedResult: 100 },
+    { name: 'flapsLeftPosition', value: 16383, expectedResult: 100 },
+    { name: 'flapsRightPosition', value: 16383, expectedResult: 100 },
+    { name: 'gearControl', value: 16383, expectedResult: 100 },
+    { name: 'gearNosePosition', value: 16383, expectedResult: 100 },
+    { name: 'gearRightPosition', value: 16383, expectedResult: 100 },
+    { name: 'gearLeftPosition', value: 16383, expectedResult: 100 },
+    { name: 'rightToeBrakeControl', value: 200, expectedResult: 100 },
+    { name: 'leftToeBrakeControl', value: 200, expectedResult: 100 },
+    { name: 'aileronTrimPosition', value: 16383, expectedResult: 100 },
+    { name: 'aileronTrimPosition', value: -16383, expectedResult: -100 },
+    { name: 'rudderTrimPosition', value: 16383, expectedResult: 100 },
+    { name: 'rudderTrimPosition', value: -16383, expectedResult: -100 },
+    { name: 'steeringTillerCalibratedValue', value: 16383, expectedResult: 100 },
+    { name: 'steeringTillerCalibratedValue', value: -16383, expectedResult: -100 },
+    { name: 'rudderCalibratedvalue', value: 16383, expectedResult: 100 },
+    { name: 'rudderCalibratedvalue', value: -16383, expectedResult: -100 },
   ];
 
   describe('offsets list', () => {
@@ -32,7 +50,7 @@ describe('offset - plane/controls', () => {
   offsetsTestCases.forEach(testedOffset => {
     describe(testedOffset.name, () => {
       it('should convert data properly', () => {
-        const convertExpression = offsets[testedOffset.name].convert.replace(new RegExp(/{VAL}/g), testedOffset.value.toString());
+        const convertExpression = replaceOffsetExpressionValue(offsets[testedOffset.name], testedOffset.value);
 
         // tslint:disable-next-line:no-eval
         expect(eval(convertExpression)).toEqual(testedOffset.expectedResult);

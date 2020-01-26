@@ -1,4 +1,4 @@
-import { applyConversion } from '@convert/apply-conversion';
+import { applyConversion, replaceOffsetExpressionValue } from '@convert/apply-conversion';
 
 import { VM } from 'vm2';
 import * as MAPPINGS from '../../src/lib/convert/mappings';
@@ -52,7 +52,7 @@ const OFFSET_WITH_NON_STRING_CONVERT = new Offset({
 const EXPECTED_EXPRESSION_ARRAY = '([123,456]).map(val => val + 1)';
 const EXPECTED_EXPRESSION_SIMPLE = '!!123';
 const EXPECTED_EXPRESSION_MULTIPLE = '123 + 123';
-const EXPECTED_EXPRESSION_STRING = `"'someString' + '--string'"`;
+const EXPECTED_EXPRESSION_STRING = `'someString' + '--string'`;
 
 const mockRun = jest.fn().mockImplementation((expression) => {
   if (expression === EXPECTED_EXPRESSION_ARRAY) {
@@ -114,7 +114,7 @@ describe('apply conversion', () => {
     });
 
     describe('when conversion does not use a mapping', () => {
-      describe('when value is not a string', () => {
+      describe('when convert expression is not a string', () => {
         it('should return an errored value set as unsupported conversion expression', () => {
           expect(applyConversion(OFFSET_WITH_NON_STRING_CONVERT, VALUE)).toEqual('UNSUPPORTED_CONVERSION_EXPRESSION');
         });
@@ -177,6 +177,34 @@ describe('apply conversion', () => {
           expect(result).toEqual(246);
         });
       });
+    });
+  });
+});
+
+describe('replace offset expression value', () => {
+  describe('when value is an array', () => {
+    it('should evaluate expression in safe VM', () => {
+      expect(replaceOffsetExpressionValue(OFFSET_WITH_ARRAY_CONVERT, ARRAY)).toEqual(EXPECTED_EXPRESSION_ARRAY);
+    });
+  });
+
+  describe('when value is not an array', () => {
+    describe('when value is a string', () => {
+      it('should evaluate expression in safe VM', () => {
+        expect(replaceOffsetExpressionValue(OFFSET_WITH_STRING_CONVERT, STRING)).toEqual(EXPECTED_EXPRESSION_STRING);
+      });
+    });
+
+    describe('when value is not a string', () => {
+      it('should evaluate expression in safe VM', () => {
+        expect(replaceOffsetExpressionValue(OFFSET_WITH_SIMPLE_CONVERT, VALUE)).toEqual(EXPECTED_EXPRESSION_SIMPLE);
+      });
+    });
+  });
+
+  describe('when expression has multiple value usage', () => {
+    it('should replace all occurences of value', () => {
+      expect(replaceOffsetExpressionValue(OFFSET_WITH_MULTIPLE_VAL_USAGE, VALUE)).toEqual(EXPECTED_EXPRESSION_MULTIPLE);
     });
   });
 });

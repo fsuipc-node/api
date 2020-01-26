@@ -1,4 +1,5 @@
 import { simulation as offsets } from '@offsets/simulation/simulation';
+import { replaceOffsetExpressionValue } from '@convert/apply-conversion';
 
 describe('offset - plane/simulation', () => {
   const offsetsTestCases = [
@@ -28,6 +29,11 @@ describe('offset - plane/simulation', () => {
     { name: 'soundControl', value: 1, expectedResult: true },
     { name: 'soundActive', value: 0, expectedResult: false },
     { name: 'soundActive', value: 1, expectedResult: true },
+    { name: 'internationalUnit', value: 0, expectedResult: 'us' },
+    { name: 'internationalUnit', value: 1, expectedResult: 'metric_feet' },
+    { name: 'internationalUnit', value: 2, expectedResult: 'metric_meters' },
+    { name: 'simulationRate', value: 512, expectedResult: 2 },
+    { name: 'simulationRate', value: 384, expectedResult: 1.5 },
   ];
 
   describe('offsets list', () => {
@@ -39,7 +45,7 @@ describe('offset - plane/simulation', () => {
   offsetsTestCases.forEach(testedOffset => {
     describe(testedOffset.name, () => {
       it('should convert data properly', () => {
-        const convertExpression = offsets[testedOffset.name].convert.replace(new RegExp(/{VAL}/g), testedOffset.value.toString());
+        const convertExpression = replaceOffsetExpressionValue(offsets[testedOffset.name], testedOffset.value);
 
         // tslint:disable-next-line:no-eval
         expect(eval(convertExpression)).toEqual(testedOffset.expectedResult);
