@@ -76,6 +76,14 @@ describe('offset - plane/radios', () => {
     { name: 'nav1GlideslopeActive', value: 0, expectedResult: false },
     { name: 'nav1GlideslopeActive', value: 1, expectedResult: true },
     { name: 'nav1Radial', value: 9102, expectedResult: 50 },
+    { name: 'nav2LocNeedlePosition', value: 127, expectedResult: 100 },
+    { name: 'nav2LocNeedlePosition', value: -127, expectedResult: -100 },
+    { name: 'nav2Radial', value: 9102, expectedResult: 50 },
+    { name: 'adf1BearingToNDB', value: 9102, expectedResult: 50 },
+    { name: 'nav2GlideslopeNeedlePosition', value: 127, expectedResult: 100 },
+    { name: 'nav2GlideslopeNeedlePosition', value: -127, expectedResult: -100 },
+    { name: 'nav2GlideslopeActive', value: 0, expectedResult: false },
+    { name: 'nav2GlideslopeActive', value: 1, expectedResult: true },
   ];
 
   describe('offsets list', () => {

@@ -417,4 +417,12 @@ export const simulation: OffsetList = {
     type: Type.UInt16,
     permission: 'rw',
   }),
+  textureQuality: new Offset({
+    value: 0xC92,
+    name: 'textureQuality',
+    category: OffsetCategory.SIMULATION,
+    description: 'texture quality - 0 to 3',
+    type: Type.UInt16,
+    permission: 'rw',
+  }),
 };

@@ -475,6 +475,17 @@ Object {
     "type": 11,
     "value": 36,
   },
+  "textureQuality": Offset {
+    "category": "simulation",
+    "convert": undefined,
+    "description": "texture quality - 0 to 3",
+    "length": undefined,
+    "mapping": undefined,
+    "name": "textureQuality",
+    "permission": "rw",
+    "type": 5,
+    "value": 3218,
+  },
   "thermalVisualisation": Offset {
     "category": "simulation",
     "convert": undefined,
