@@ -1,6 +1,6 @@
 import { navCapabilities } from '@mappings/nav-capabilities';
 
-const VALUES = [0, 1, 1, 0, 0, 0, 1, 1];
+const VALUES = [0, 1, 1, 0, 0, 0, 1, 1, 1, 1];
 const EXPECTED_RESULT = {
   dme: false,
   tacan: true,
