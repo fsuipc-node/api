@@ -154,4 +154,13 @@ export const cockpit: OffsetList = {
     type: Type.Byte,
     permission: 'rw',
   }),
+  gyroDrift: new Offset({
+    value: 0xC3E,
+    name: 'gyroDrift',
+    category: OffsetCategory.COCKPIT,
+    description: 'gyro drift - degrees',
+    convert: 'Math.round({VAL} * 360 / 65536)',
+    type: Type.Int16,
+    permission: 'rw',
+  }),
 };

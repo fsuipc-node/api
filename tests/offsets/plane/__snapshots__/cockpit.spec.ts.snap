@@ -57,6 +57,17 @@ Object {
     "type": 5,
     "value": 1554,
   },
+  "gyroDrift": Offset {
+    "category": "cockpit",
+    "convert": "Math.round({VAL} * 360 / 65536)",
+    "description": "gyro drift - degrees",
+    "length": undefined,
+    "mapping": undefined,
+    "name": "gyroDrift",
+    "permission": "rw",
+    "type": 2,
+    "value": 3134,
+  },
   "landingLights": Offset {
     "category": "cockpit",
     "convert": "!!{VAL}",

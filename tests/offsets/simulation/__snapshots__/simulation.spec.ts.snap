@@ -277,6 +277,17 @@ Object {
     "type": 2,
     "value": 612,
   },
+  "realism": Offset {
+    "category": "simulation",
+    "convert": undefined,
+    "description": "realism - percent",
+    "length": undefined,
+    "mapping": undefined,
+    "name": "realism",
+    "permission": "rw",
+    "type": 5,
+    "value": 3140,
+  },
   "reliability": Offset {
     "category": "simulation",
     "convert": undefined,

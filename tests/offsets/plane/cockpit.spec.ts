@@ -21,6 +21,7 @@ describe('offset - plane/cockpit', () => {
     { name: 'stallWarning', value: 1, expectedResult: true },
     { name: 'overspeedWarning', value: 0, expectedResult: false },
     { name: 'overspeedWarning', value: 1, expectedResult: true },
+    { name: 'gyroDrift', value: 9102, expectedResult: 50 },
   ];
 
   describe('offsets list', () => {

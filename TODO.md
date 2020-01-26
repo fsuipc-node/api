@@ -7,6 +7,7 @@
   - `0xB50`: bleed air source control, value depending on aircraft model
   - `0x892`, `0x92A`, `0x9C2`, `0xA5A`: engine 1-4 starter switch position value depending on propulsion type
   - `0x898`: require engineRPMScaler for proper calculation
+  - `0xC52`: VOR or ILS depending value for signal strength percent?
 
 ## Write offsets
 

@@ -409,4 +409,12 @@ export const simulation: OffsetList = {
     length: 9,
     permission: 'r',
   }),
+  realism: new Offset({
+    value: 0xC44,
+    name: 'realism',
+    category: OffsetCategory.SIMULATION,
+    description: 'realism - percent',
+    type: Type.UInt16,
+    permission: 'rw',
+  }),
 };

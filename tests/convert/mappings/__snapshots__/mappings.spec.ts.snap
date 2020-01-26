@@ -7,10 +7,13 @@ Object {
   "ftsecToKt": [Function],
   "ktToFtsec": [Function],
   "lightsMapping": [Function],
+  "navBackCourseFlags": [Function],
+  "navCapabilities": [Function],
   "nearestAirportsIds": [Function],
   "precipitationType": [Function],
   "runwaySurfaceCondition": [Function],
   "seasons": [Function],
   "spoilersControl": [Function],
+  "vorToFrom": [Function],
 }
 `;
