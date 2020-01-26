@@ -1,6 +1,7 @@
 import { lightsMapping } from './lights';
 import { runwaySurfaceCondition } from './runway-surface-condition';
 import { precipitationType } from './precipitation-type';
+import { cloudType } from './cloud-type';
 import { seasons } from './seasons';
 import { ftsecToKt, ktToFtsec } from './units';
 import { engineType } from './engine-type';
@@ -18,6 +19,7 @@ export const MAPPINGS: { [key: string]: (_: any) => any } = {
   // weather
   precipitationType,
   seasons,
+  cloudType,
 
   // units
   ftsecToKt,
