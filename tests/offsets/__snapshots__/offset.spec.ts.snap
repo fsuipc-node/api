@@ -2920,7 +2920,7 @@ Object {
   "metarBarometricDrift": Offset {
     "category": "weather",
     "convert": "{VAL} / 16",
-    "description": "METAR barometric drift - difference between aircraft/METAR QNH. Adding drift withll give correct value for ATIS report",
+    "description": "METAR barometric drift - difference between aircraft/METAR QNH. Adding drift will give correct value for ATIS report",
     "length": undefined,
     "mapping": undefined,
     "name": "metarBarometricDrift",

@@ -27,7 +27,7 @@ export const weather: OffsetList = {
     value: 0x4BC,
     name: 'metarBarometricDrift',
     category: OffsetCategory.WEATHER,
-    description: 'METAR barometric drift - difference between aircraft/METAR QNH. Adding drift withll give correct value for ATIS report',
+    description: 'METAR barometric drift - difference between aircraft/METAR QNH. Adding drift will give correct value for ATIS report',
     type: Type.UInt16,
     convert: '{VAL} / 16',
     permission: 'r',
