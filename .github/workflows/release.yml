@@ -1,0 +1,40 @@
+name: release
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  build:
+    name: build
+    runs-on: windows-latest
+    timeout-minutes: 5
+    steps:
+      - name: setup:checkout
+        uses: actions/checkout@master
+      - name: setup:python3.7
+        uses: actions/setup-python@v1
+        with:
+          python-version: '3.7'
+          architecture: x64
+      - name: setup:cache
+        uses: actions/cache@v1.1.0
+        with:
+          path: ${{ github.workspace }}/node_modules
+          key: ${{ runner.os }}-api-build-node-${{ hashFiles('yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-api-build-node-
+            ${{ runner.os }}-api-
+      - name: deps:install
+        shell: bash
+        run: |
+          yarn
+      - name: build:prod
+        shell: bash
+        run: |
+          yarn compile:prod
+      - name: build:upload:artifacts
+        uses: actions/upload-artifact@v1
+        with:
+          name: fsuipc-api-${{ github.ref }}
+          path: ${{ github.workspace }}/dist

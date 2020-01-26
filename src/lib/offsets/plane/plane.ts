@@ -153,4 +153,13 @@ export const plane: OffsetList = {
     type: Type.UInt32,
     permission: 'r',
   }),
+  maxMach: new Offset({
+    value: 0xB0C,
+    name: 'maxMach',
+    category: OffsetCategory.PLANE,
+    description: 'mach maximum operating - not FS2004',
+    convert: '+({VAL} / 20438).toFixed(2)',
+    type: Type.Int32,
+    permission: 'r',
+  }),
 };

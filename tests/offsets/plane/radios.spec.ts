@@ -1,4 +1,5 @@
 import { radios as offsets } from '@offsets/plane/radios';
+import { replaceOffsetExpressionValue } from '@convert/apply-conversion';
 
 describe('offset - plane/radios', () => {
   const offsetsTestCases = [
@@ -42,6 +43,47 @@ describe('offset - plane/radios', () => {
     { name: 'vor1DmeLatitude', value: 5198687, expectedResult: 46.77999650061239 },
     { name: 'vor1DmeLongitude', value: -851715875, expectedResult: -71.38999993912876 },
     { name: 'vor1DmeElevation', value: 92, expectedResult: 301.84 },
+    { name: 'dme1Distance', value: '92.5', expectedResult: 92.5 },
+    { name: 'dme1Distance', value: '92.5 ', expectedResult: 92.5 },
+    { name: 'dme1Distance', value: '92.50', expectedResult: 92.5 },
+    { name: 'dme1Distance', value: '112.5', expectedResult: 112.5 },
+    { name: 'dme1Distance', value: '112.0', expectedResult: 112 },
+    { name: 'dme1Distance', value: '112. ', expectedResult: 112 },
+    { name: 'dme1Speed', value: '92.5', expectedResult: 92.5 },
+    { name: 'dme1Speed', value: '92.5 ', expectedResult: 92.5 },
+    { name: 'dme1Speed', value: '92.50', expectedResult: 92.5 },
+    { name: 'dme1Speed', value: '112.5', expectedResult: 112.5 },
+    { name: 'dme1Speed', value: '112.0', expectedResult: 112 },
+    { name: 'dme1Speed', value: '112. ', expectedResult: 112 },
+    { name: 'dme2Distance', value: '92.5', expectedResult: 92.5 },
+    { name: 'dme2Distance', value: '92.5 ', expectedResult: 92.5 },
+    { name: 'dme2Distance', value: '92.50', expectedResult: 92.5 },
+    { name: 'dme2Distance', value: '112.5', expectedResult: 112.5 },
+    { name: 'dme2Distance', value: '112.0', expectedResult: 112 },
+    { name: 'dme2Distance', value: '112. ', expectedResult: 112 },
+    { name: 'dme2Speed', value: '92.5', expectedResult: 92.5 },
+    { name: 'dme2Speed', value: '92.5 ', expectedResult: 92.5 },
+    { name: 'dme2Speed', value: '92.50', expectedResult: 92.5 },
+    { name: 'dme2Speed', value: '112.5', expectedResult: 112.5 },
+    { name: 'dme2Speed', value: '112.0', expectedResult: 112 },
+    { name: 'dme2Speed', value: '112. ', expectedResult: 112 },
+    { name: 'nav1MagVar', value: 9102, expectedResult: 50 },
+    { name: 'nav2MagVar', value: 9102, expectedResult: 50 },
+    { name: 'nav1LocNeedlePosition', value: 127, expectedResult: 100 },
+    { name: 'nav1LocNeedlePosition', value: -127, expectedResult: -100 },
+    { name: 'nav1GlideslopeNeedlePosition', value: 127, expectedResult: 100 },
+    { name: 'nav1GlideslopeNeedlePosition', value: -127, expectedResult: -100 },
+    { name: 'nav1GlideslopeActive', value: 0, expectedResult: false },
+    { name: 'nav1GlideslopeActive', value: 1, expectedResult: true },
+    { name: 'nav1Radial', value: 9102, expectedResult: 50 },
+    { name: 'nav2LocNeedlePosition', value: 127, expectedResult: 100 },
+    { name: 'nav2LocNeedlePosition', value: -127, expectedResult: -100 },
+    { name: 'nav2Radial', value: 9102, expectedResult: 50 },
+    { name: 'adf1BearingToNDB', value: 9102, expectedResult: 50 },
+    { name: 'nav2GlideslopeNeedlePosition', value: 127, expectedResult: 100 },
+    { name: 'nav2GlideslopeNeedlePosition', value: -127, expectedResult: -100 },
+    { name: 'nav2GlideslopeActive', value: 0, expectedResult: false },
+    { name: 'nav2GlideslopeActive', value: 1, expectedResult: true },
   ];
 
   describe('offsets list', () => {
@@ -53,7 +95,7 @@ describe('offset - plane/radios', () => {
   offsetsTestCases.forEach(testedOffset => {
     describe(testedOffset.name, () => {
       it('should convert data properly', () => {
-        const convertExpression = offsets[testedOffset.name].convert.replace(new RegExp(/{VAL}/g), testedOffset.value.toString());
+        const convertExpression = replaceOffsetExpressionValue(offsets[testedOffset.name], testedOffset.value);
 
         // tslint:disable-next-line:no-eval
         expect(eval(convertExpression)).toEqual(testedOffset.expectedResult);

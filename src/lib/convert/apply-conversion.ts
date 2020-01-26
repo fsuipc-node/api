@@ -21,13 +21,19 @@ export const applyConversion = (offset: Offset, rawOffsetValue: RawOffsetValue):
       return 'UNSUPPORTED_CONVERSION_EXPRESSION';
     }
 
-    const convertExpression: string = offset.convert.replace(
-      new RegExp(/{VAL}/g),
-      Array.isArray(rawOffsetValue)
-        ? `${JSON.stringify(rawOffsetValue)}`
-        : rawOffsetValue.toString()
+    return new VM().run(
+      replaceOffsetExpressionValue(offset, rawOffsetValue)
     );
-
-    return new VM().run(convertExpression);
   }
+};
+
+export const replaceOffsetExpressionValue = (offset: Offset, rawOffsetValue: RawOffsetValue): string => {
+  return offset.convert.replace(
+    new RegExp(/{VAL}/g),
+    Array.isArray(rawOffsetValue)
+      ? `${JSON.stringify(rawOffsetValue)}`
+      : typeof rawOffsetValue === 'string'
+        ? `'${rawOffsetValue}'`
+        : rawOffsetValue.toString()
+  );
 };

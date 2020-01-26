@@ -1,4 +1,5 @@
 import { positionAttitude as offsets } from '@offsets/position-attitude/position-attitude';
+import { replaceOffsetExpressionValue } from '@convert/apply-conversion';
 
 describe('offset - position-attitude/position-attitude', () => {
   const offsetsTestCases = [
@@ -36,7 +37,7 @@ describe('offset - position-attitude/position-attitude', () => {
   offsetsTestCases.forEach(testedOffset => {
     describe(testedOffset.name, () => {
       it('should convert data properly', () => {
-        const convertExpression = offsets[testedOffset.name].convert.replace(new RegExp(/{VAL}/g), testedOffset.value.toString());
+        const convertExpression = replaceOffsetExpressionValue(offsets[testedOffset.name], testedOffset.value);
 
         // tslint:disable-next-line:no-eval
         expect(eval(convertExpression)).toEqual(testedOffset.expectedResult);

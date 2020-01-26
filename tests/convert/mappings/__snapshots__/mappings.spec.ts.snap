@@ -2,13 +2,18 @@
 
 exports[`mappings list should import all mappings 1`] = `
 Object {
+  "appliedBrakes": [Function],
   "engineType": [Function],
   "ftsecToKt": [Function],
   "ktToFtsec": [Function],
   "lightsMapping": [Function],
+  "navBackCourseFlags": [Function],
+  "navCapabilities": [Function],
   "nearestAirportsIds": [Function],
   "precipitationType": [Function],
   "runwaySurfaceCondition": [Function],
   "seasons": [Function],
+  "spoilersControl": [Function],
+  "vorToFrom": [Function],
 }
 `;

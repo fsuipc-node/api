@@ -1,4 +1,5 @@
 import { engine2 as offsets } from '@offsets/plane/engines/engine2';
+import { replaceOffsetExpressionValue } from '@convert/apply-conversion';
 
 describe('offset - plane/engines/engine2', () => {
   const offsetsTestCases = [
@@ -40,7 +41,7 @@ describe('offset - plane/engines/engine2', () => {
   offsetsTestCases.forEach(testedOffset => {
     describe(testedOffset.name, () => {
       it('should convert data properly', () => {
-        const convertExpression = offsets[testedOffset.name].convert.replace(new RegExp(/{VAL}/g), testedOffset.value.toString());
+        const convertExpression = replaceOffsetExpressionValue(offsets[testedOffset.name], testedOffset.value);
 
         // tslint:disable-next-line:no-eval
         expect(eval(convertExpression)).toEqual(testedOffset.expectedResult);

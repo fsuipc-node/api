@@ -1,4 +1,5 @@
 import { cockpit as offsets } from '@offsets/plane/cockpit';
+import { replaceOffsetExpressionValue } from '@convert/apply-conversion';
 
 describe('offset - plane/cockpit', () => {
   const offsetsTestCases = [
@@ -20,6 +21,15 @@ describe('offset - plane/cockpit', () => {
     { name: 'stallWarning', value: 1, expectedResult: true },
     { name: 'overspeedWarning', value: 0, expectedResult: false },
     { name: 'overspeedWarning', value: 1, expectedResult: true },
+    { name: 'gyroDrift', value: 9102, expectedResult: 50 },
+    { name: 'autopilotSpeedSwitch738EFIS', value: 0, expectedResult: false },
+    { name: 'autopilotSpeedSwitch738EFIS', value: 1, expectedResult: true },
+    { name: 'NDILSSwitchA321EFIS', value: 0, expectedResult: false },
+    { name: 'NDILSSwitchA321EFIS', value: 1, expectedResult: true },
+    { name: 'autopilotSpeedSwitch321EFIS', value: 0, expectedResult: false },
+    { name: 'autopilotSpeedSwitch321EFIS', value: 1, expectedResult: true },
+    { name: 'altitudeChangeRate321EFIS', value: 0, expectedResult: 100 },
+    { name: 'altitudeChangeRate321EFIS', value: 1, expectedResult: 1000 },
   ];
 
   describe('offsets list', () => {
@@ -31,7 +41,7 @@ describe('offset - plane/cockpit', () => {
   offsetsTestCases.forEach(testedOffset => {
     describe(testedOffset.name, () => {
       it('should convert data properly', () => {
-        const convertExpression = offsets[testedOffset.name].convert.replace(new RegExp(/{VAL}/g), testedOffset.value.toString());
+        const convertExpression = replaceOffsetExpressionValue(offsets[testedOffset.name], testedOffset.value);
 
         // tslint:disable-next-line:no-eval
         expect(eval(convertExpression)).toEqual(testedOffset.expectedResult);
