@@ -15,3 +15,4 @@ Convert should varies depending on write or read mode
 
 ## Offset missing mappings:
   - `0xAF8`: fuel tank selected
+  - `0xE84`: cloud type

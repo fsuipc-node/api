@@ -22,6 +22,14 @@ describe('offset - plane/cockpit', () => {
     { name: 'overspeedWarning', value: 0, expectedResult: false },
     { name: 'overspeedWarning', value: 1, expectedResult: true },
     { name: 'gyroDrift', value: 9102, expectedResult: 50 },
+    { name: 'autopilotSpeedSwitch738EFIS', value: 0, expectedResult: false },
+    { name: 'autopilotSpeedSwitch738EFIS', value: 1, expectedResult: true },
+    { name: 'NDILSSwitchA321EFIS', value: 0, expectedResult: false },
+    { name: 'NDILSSwitchA321EFIS', value: 1, expectedResult: true },
+    { name: 'autopilotSpeedSwitch321EFIS', value: 0, expectedResult: false },
+    { name: 'autopilotSpeedSwitch321EFIS', value: 1, expectedResult: true },
+    { name: 'altitudeChangeRate321EFIS', value: 0, expectedResult: 100 },
+    { name: 'altitudeChangeRate321EFIS', value: 1, expectedResult: 1000 },
   ];
 
   describe('offsets list', () => {

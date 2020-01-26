@@ -12,6 +12,10 @@ describe('offset - environment/weather', () => {
     { name: 'dewPoint', value: 512, expectedResult: 2 },
     { name: 'surfaceWindDirection', value: 32768, expectedResult: 180 },
     { name: 'unlimitedVisibility', value: 3200, expectedResult: 2 },
+    { name: 'visibility', value: 3156, expectedResult: 31.56 },
+    { name: 'OAT', value: 512, expectedResult: 2 },
+    { name: 'interpolatedDewPoint', value: 512, expectedResult: 2 },
+    { name: 'windDirection', value: 32768, expectedResult: 180 },
   ];
 
   describe('offsets list', () => {
