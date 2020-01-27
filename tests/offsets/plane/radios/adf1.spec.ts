@@ -1,10 +1,10 @@
-import { radios as offsets } from '@offsets/plane/radios';
+import { ADF1 as offsets } from '@offsets/plane/radios/adf1';
 import { replaceOffsetExpressionValue } from '@convert/apply-conversion';
 
-describe('offset - plane/radios', () => {
+describe('offset - plane/radios/adf1', () => {
   const offsetsTestCases = [
-    { name: 'comFreq', value: 13584, expectedResult: 13510 },
-    { name: 'transponderFreq', value: 13584, expectedResult: 13510 },
+    { name: 'adfFreq', value: 74528, expectedResult: 12320 },
+    { name: 'adf1BearingToNDB', value: 9102, expectedResult: 50 },
   ];
 
   describe('offsets list', () => {
