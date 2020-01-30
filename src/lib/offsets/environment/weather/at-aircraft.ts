@@ -484,4 +484,4 @@ export const weatherAtAircraft: OffsetList = {
     type: Type.UInt16,
     permission: 'r',
   }),
-}
+};
