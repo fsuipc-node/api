@@ -7,6 +7,9 @@ describe('offset - plane/radios/adf2', () => {
     { name: 'adf2RelBearing', value: 38229, expectedResult: 210 },
     { name: 'ndb2IdentSoundSwitch', value: 0, expectedResult: false },
     { name: 'ndb2IdentSoundSwitch', value: 1, expectedResult: true },
+    { name: 'adf2Latitude', value: 5198687, expectedResult: 46.77999650061239 },
+    { name: 'adf2Longitude', value: -851715875, expectedResult: -71.38999993912876 },
+    { name: 'adf2Altitude', value: 92, expectedResult: 301.84 },
   ];
 
   describe('offsets list', () => {

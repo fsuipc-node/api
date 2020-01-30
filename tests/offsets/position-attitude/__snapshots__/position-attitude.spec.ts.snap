@@ -35,6 +35,17 @@ Object {
     "type": 6,
     "value": 708,
   },
+  "gForce": Offset {
+    "category": "radios",
+    "convert": undefined,
+    "description": "g-force",
+    "length": undefined,
+    "mapping": undefined,
+    "name": "gForce",
+    "permission": "r",
+    "type": 8,
+    "value": 4416,
+  },
   "groundElevation": Offset {
     "category": "position_attitude",
     "convert": "Math.round({VAL} * 3.28084 / 256)",

@@ -2,6 +2,17 @@
 
 exports[`offset - plane/radios/adf1 offsets list should have required properties 1`] = `
 Object {
+  "adf1Altitude": Offset {
+    "category": "radios",
+    "convert": "+({VAL} * 3.28084).toFixed(2)",
+    "description": "adf1 altitude - ft",
+    "length": undefined,
+    "mapping": undefined,
+    "name": "adf1Altitude",
+    "permission": "r",
+    "type": 3,
+    "value": 4396,
+  },
   "adf1BearingToNDB": Offset {
     "category": "radios",
     "convert": "Math.round({VAL} * 360 / 65536)",
@@ -23,6 +34,28 @@ Object {
     "permission": "rw",
     "type": 5,
     "value": 3180,
+  },
+  "adf1Latitude": Offset {
+    "category": "radios",
+    "convert": "{VAL} * 90 / 10001750",
+    "description": "adf1 latitude",
+    "length": undefined,
+    "mapping": undefined,
+    "name": "adf1Latitude",
+    "permission": "r",
+    "type": 3,
+    "value": 4388,
+  },
+  "adf1Longitude": Offset {
+    "category": "radios",
+    "convert": "{VAL} * 360 / (65536 * 65536)",
+    "description": "adf1 longitude",
+    "length": undefined,
+    "mapping": undefined,
+    "name": "adf1Longitude",
+    "permission": "r",
+    "type": 3,
+    "value": 4392,
   },
   "adf1SignalStrength": Offset {
     "category": "radios",

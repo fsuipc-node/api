@@ -2774,6 +2774,17 @@ Object {
     "type": 2,
     "value": 2804,
   },
+  "gForce": Offset {
+    "category": "radios",
+    "convert": undefined,
+    "description": "g-force",
+    "length": undefined,
+    "mapping": undefined,
+    "name": "gForce",
+    "permission": "r",
+    "type": 8,
+    "value": 4416,
+  },
   "gearControl": Offset {
     "category": "controls",
     "convert": "Math.round({VAL} / 16383 * 100)",

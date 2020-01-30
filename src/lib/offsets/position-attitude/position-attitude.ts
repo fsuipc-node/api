@@ -211,4 +211,12 @@ export const positionAttitude: OffsetList = {
     convert: '+({VAL} * -3.28084).toFixed(2)',
     permission: 'r',
   }),
+  gForce: new Offset({
+    value: 0x1140,
+    name: 'gForce',
+    category: OffsetCategory.RADIOS,
+    description: 'g-force',
+    type: Type.Double,
+    permission: 'r',
+  }),
 };
