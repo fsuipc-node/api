@@ -510,4 +510,4 @@ export const weatherSettings: OffsetList = {
     type: Type.UInt16,
     permission: 'rw',
   }),
-}
+};
