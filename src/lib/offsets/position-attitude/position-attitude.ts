@@ -214,9 +214,27 @@ export const positionAttitude: OffsetList = {
   gForce: new Offset({
     value: 0x1140,
     name: 'gForce',
-    category: OffsetCategory.RADIOS,
+    category: OffsetCategory.POSITION_ATTITUDE,
     description: 'g-force',
     type: Type.Double,
+    permission: 'r',
+  }),
+  gForceTouchDown: new Offset({
+    value: 0x11B8,
+    name: 'gForceTouchDown',
+    category: OffsetCategory.POSITION_ATTITUDE,
+    description: 'g-force touchdown - unknown unit',
+    convert: '{VAL} / 625',
+    type: Type.Int16,
+    permission: 'r',
+  }),
+  gForceAlt: new Offset({
+    value: 0x11BA,
+    name: 'gForceAlt',
+    category: OffsetCategory.POSITION_ATTITUDE,
+    description: 'g-force alt unit',
+    convert: '{VAL} / 625',
+    type: Type.Int16,
     permission: 'r',
   }),
 };

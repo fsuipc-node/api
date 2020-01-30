@@ -156,6 +156,17 @@ Object {
     "type": 5,
     "value": 584,
   },
+  "timeOfDay": Offset {
+    "category": "environment",
+    "convert": undefined,
+    "description": "time of day",
+    "length": undefined,
+    "mapping": undefined,
+    "name": "timeOfDay",
+    "permission": "r",
+    "type": 0,
+    "value": 4446,
+  },
   "timezoneOffsetToZulu": Offset {
     "category": "environment",
     "convert": undefined,

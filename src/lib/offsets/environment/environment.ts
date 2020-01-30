@@ -206,4 +206,12 @@ export const environment: OffsetList = {
     length: 4,
     permission: 'r',
   }),
+  timeOfDay: new Offset({
+    value: 0x115E,
+    name: 'timeOfDay',
+    category: OffsetCategory.ENVIRONMENT,
+    description: 'time of day',
+    type: Type.Byte,
+    permission: 'r',
+  }),
 };

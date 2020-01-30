@@ -26,6 +26,8 @@ describe('offset - position-attitude/position-attitude', () => {
     { name: 'viewpointBank', value: -238609294, expectedResult: -20 },
     { name: 'viewpointHeading', value: 2147483648, expectedResult: 180 },
     { name: 'verticalSpeed', value: -46, expectedResult: 150.92 },
+    { name: 'gForceTouchDown', value: 1250, expectedResult: 2 },
+    { name: 'gForceAlt', value: 1250, expectedResult: 2 },
   ];
 
   describe('offsets list', () => {

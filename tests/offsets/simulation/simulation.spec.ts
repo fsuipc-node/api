@@ -34,6 +34,14 @@ describe('offset - plane/simulation', () => {
     { name: 'internationalUnit', value: 2, expectedResult: 'metric_meters' },
     { name: 'simulationRate', value: 512, expectedResult: 2 },
     { name: 'simulationRate', value: 384, expectedResult: 1.5 },
+    { name: 'groundSceneryShadows', value: 0, expectedResult: false },
+    { name: 'groundSceneryShadows', value: 1, expectedResult: true },
+    { name: 'groundSceneryShadows', value: 2, expectedResult: false },
+    { name: 'aircraftShadows', value: 0, expectedResult: false },
+    { name: 'aircraftShadows', value: 1, expectedResult: true },
+    { name: 'aircraftReflections', value: 0, expectedResult: false },
+    { name: 'aircraftReflections', value: 1, expectedResult: false },
+    { name: 'aircraftReflections', value: 2, expectedResult: true },
   ];
 
   describe('offsets list', () => {
