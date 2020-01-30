@@ -237,4 +237,13 @@ export const positionAttitude: OffsetList = {
     type: Type.Int16,
     permission: 'r',
   }),
+  angleOfAttack: new Offset({
+    value: 0x11BE,
+    name: 'angleOfAttack',
+    category: OffsetCategory.POSITION_ATTITUDE,
+    description: 'angle of attack - percent of max',
+    convert: '+(100 - (100 * {VAL} / 32767)).toFixed(2)',
+    type: Type.Int16,
+    permission: 'r',
+  }),
 };

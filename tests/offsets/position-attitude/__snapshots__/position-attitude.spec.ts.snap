@@ -13,6 +13,17 @@ Object {
     "type": 4,
     "value": 1392,
   },
+  "angleOfAttack": Offset {
+    "category": "position_attitude",
+    "convert": "+(100 - (100 * {VAL} / 32767)).toFixed(2)",
+    "description": "angle of attack - percent of max",
+    "length": undefined,
+    "mapping": undefined,
+    "name": "angleOfAttack",
+    "permission": "r",
+    "type": 2,
+    "value": 4542,
+  },
   "bank": Offset {
     "category": "position_attitude",
     "convert": "+({VAL} * 360 / (65536 * 65536)).toFixed(2)",

@@ -28,6 +28,7 @@ describe('offset - position-attitude/position-attitude', () => {
     { name: 'verticalSpeed', value: -46, expectedResult: 150.92 },
     { name: 'gForceTouchDown', value: 1250, expectedResult: 2 },
     { name: 'gForceAlt', value: 1250, expectedResult: 2 },
+    { name: 'angleOfAttack', value: 25456, expectedResult: 22.31 },
   ];
 
   describe('offsets list', () => {
