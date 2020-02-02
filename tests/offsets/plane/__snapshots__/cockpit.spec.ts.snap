@@ -211,6 +211,17 @@ Object {
     "type": 5,
     "value": 1554,
   },
+  "fuelFlowAtCruise": Offset {
+    "category": "cockpit",
+    "convert": undefined,
+    "description": "Estimated fuel flow at cruise - lb/h",
+    "length": undefined,
+    "mapping": undefined,
+    "name": "fuelFlowAtCruise",
+    "permission": "r",
+    "type": 3,
+    "value": 4720,
+  },
   "gyroDrift": Offset {
     "category": "cockpit",
     "convert": "Math.round({VAL} * 360 / 65536)",

@@ -22,6 +22,8 @@ describe('offset - plane/plane', () => {
     { name: 'hasToeBrakes', value: 0, expectedResult: false },
     { name: 'hasToeBrakes', value: 1, expectedResult: true },
     { name: 'maxMach', value: 13200, expectedResult: 0.65 },
+    { name: 'aircraftEmptyWeight', value: 512060, expectedResult: 2000.23 },
+    { name: 'aircraftMaxGrossWeight', value: 512060, expectedResult: 2000.23 },
   ];
 
   describe('offsets list', () => {

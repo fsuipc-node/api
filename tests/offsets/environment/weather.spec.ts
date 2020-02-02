@@ -65,6 +65,7 @@ describe('offset - environment/weather', () => {
     { name: 'lowerCloudIcing', value: 0, expectedResult: false },
     { name: 'stormCloudIcing', value: 1, expectedResult: true },
     { name: 'stormCloudIcing', value: 0, expectedResult: false },
+    { name: 'totalAirTemperature', value: 516, expectedResult: 2 },
   ];
 
   describe('offsets list', () => {

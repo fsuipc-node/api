@@ -264,6 +264,15 @@ export const weather: OffsetList = {
     type: Type.UInt16,
     permission: 'r',
   }),
+  totalAirTemperature: new Offset({
+    value: 0x11D0,
+    name: 'totalAirTemperature',
+    category: OffsetCategory.WEATHER,
+    description: 'total air temperature',
+    convert: 'Math.round({VAL} / 256)',
+    type: Type.Int16,
+    permission: 'r',
+  }),
   ...weatherAtAircraft,
   ...weatherSettings,
 };

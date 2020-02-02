@@ -11,6 +11,10 @@ describe('offset - plane/fuel', () => {
     { name: 'fuelRightMainTankLevel', value: 4194304, expectedResult: 50 },
     { name: 'fuelRightAuxTankLevel', value: 4194304, expectedResult: 50 },
     { name: 'fuelRightTipTankLevel', value: 4194304, expectedResult: 50 },
+    { name: 'fuelCenter2TankLevel', value: 4194304, expectedResult: 50 },
+    { name: 'fuelCenter3TankLevel', value: 4194304, expectedResult: 50 },
+    { name: 'fuelExternal1TankLevel', value: 4194304, expectedResult: 50 },
+    { name: 'fuelExternal2TankLevel', value: 4194304, expectedResult: 50 },
   ];
 
   describe('offsets list', () => {

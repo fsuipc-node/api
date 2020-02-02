@@ -525,4 +525,21 @@ export const simulation: OffsetList = {
     type: Type.Byte,
     permission: 'rw',
   }),
+  unlimitedFuel: new Offset({
+    value: 0x123F,
+    name: 'unlimitedFuel',
+    category: OffsetCategory.SIMULATION,
+    description: 'unlimited fuel',
+    convert: '!!{VAL}',
+    type: Type.Byte,
+    permission: 'r',
+  }),
+  textDisplayMode: new Offset({
+    value: 0x1274,
+    name: 'textDisplayMode',
+    category: OffsetCategory.SIMULATION,
+    description: 'text display mode (eg: ATIS) - 0=static 1=scroll',
+    type: Type.Int16,
+    permission: 'r',
+  }),
 };

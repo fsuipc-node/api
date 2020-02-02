@@ -246,4 +246,13 @@ export const positionAttitude: OffsetList = {
     type: Type.Int16,
     permission: 'r',
   }),
+  machSpeed: new Offset({
+    value: 0x11C6,
+    name: 'machSpeed',
+    category: OffsetCategory.POSITION_ATTITUDE,
+    description: 'mach speed',
+    convert: '{VAL} / 20480',
+    type: Type.Int16,
+    permission: 'r',
+  }),
 };

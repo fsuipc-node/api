@@ -1124,6 +1124,17 @@ Object {
     "type": 2,
     "value": 3908,
   },
+  "totalAirTemperature": Offset {
+    "category": "weather",
+    "convert": "Math.round({VAL} / 256)",
+    "description": "total air temperature",
+    "length": undefined,
+    "mapping": undefined,
+    "name": "totalAirTemperature",
+    "permission": "r",
+    "type": 2,
+    "value": 4560,
+  },
   "unlimitedVisibility": Offset {
     "category": "weather",
     "convert": "+({VAL} / 1600).toFixed(2)",

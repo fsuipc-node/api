@@ -145,6 +145,17 @@ Object {
     "type": 4,
     "value": 1384,
   },
+  "machSpeed": Offset {
+    "category": "position_attitude",
+    "convert": "{VAL} / 20480",
+    "description": "mach speed",
+    "length": undefined,
+    "mapping": undefined,
+    "name": "machSpeed",
+    "permission": "r",
+    "type": 2,
+    "value": 4550,
+  },
   "magVar": Offset {
     "category": "position_attitude",
     "convert": "+({VAL}*360/65536).toFixed(2)",

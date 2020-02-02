@@ -42,6 +42,8 @@ describe('offset - plane/simulation', () => {
     { name: 'aircraftReflections', value: 0, expectedResult: false },
     { name: 'aircraftReflections', value: 1, expectedResult: false },
     { name: 'aircraftReflections', value: 2, expectedResult: true },
+    { name: 'unlimitedFuel', value: 0, expectedResult: false },
+    { name: 'unlimitedFuel', value: 1, expectedResult: true },
   ];
 
   describe('offsets list', () => {
