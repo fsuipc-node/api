@@ -46,7 +46,7 @@ export const propeller1: OffsetList = {
     category: OffsetCategory.ENGINE,
     description: 'propeller 1 feathering inhibit',
     convert: '!!{VAL}',
-    type: Type.Int32,
+    type: Type.UInt32,
     permission: 'rw',
   }),
   propeller1Feathered: new Offset({
@@ -55,7 +55,7 @@ export const propeller1: OffsetList = {
     category: OffsetCategory.ENGINE,
     description: 'propeller 1 feathered',
     convert: '!!{VAL}',
-    type: Type.Int32,
+    type: Type.UInt32,
     permission: 'r',
   }),
   propeller1SyncDeltaLever: new Offset({
@@ -63,7 +63,7 @@ export const propeller1: OffsetList = {
     name: 'propeller1SyncDeltaLever',
     category: OffsetCategory.ENGINE,
     description: 'propeller 1 sync delta lever',
-    type: Type.Int64,
+    type: Type.Double,
     permission: 'r',
   }),
   propeller1AutofeatherArmed: new Offset({
@@ -72,7 +72,7 @@ export const propeller1: OffsetList = {
     category: OffsetCategory.ENGINE,
     description: 'propeller 1 autofeather armed flag',
     convert: '!!{VAL}',
-    type: Type.Int32,
+    type: Type.UInt32,
     permission: 'rw',
   }),
   propeller1FeatherSwitch: new Offset({
@@ -81,7 +81,7 @@ export const propeller1: OffsetList = {
     category: OffsetCategory.ENGINE,
     description: 'propeller 1 feather switch',
     convert: '!!{VAL}',
-    type: Type.Int32,
+    type: Type.UInt32,
     permission: 'rw',
   }),
   propeller1PanelAutofeatherSwitch: new Offset({
@@ -90,7 +90,7 @@ export const propeller1: OffsetList = {
     category: OffsetCategory.ENGINE,
     description: 'propeller 1 panel autofeather switch',
     convert: '!!{VAL}',
-    type: Type.Int32,
+    type: Type.UInt32,
     permission: 'rw',
   }),
   propeller1Sync: new Offset({
@@ -99,7 +99,7 @@ export const propeller1: OffsetList = {
     category: OffsetCategory.ENGINE,
     description: 'propeller 1 sync active',
     convert: '!!{VAL}',
-    type: Type.Int32,
+    type: Type.UInt32,
     permission: 'rw',
   }),
   propeller1DeiceSwitch: new Offset({
@@ -108,7 +108,7 @@ export const propeller1: OffsetList = {
     category: OffsetCategory.ENGINE,
     description: 'propeller 1 de-ice active',
     convert: '!!{VAL}',
-    type: Type.Int32,
+    type: Type.UInt32,
     permission: 'rw',
   }),
 };

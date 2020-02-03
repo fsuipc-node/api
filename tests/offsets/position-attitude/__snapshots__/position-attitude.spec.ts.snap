@@ -153,7 +153,7 @@ Object {
     "mapping": undefined,
     "name": "machSpeed",
     "permission": "r",
-    "type": 2,
+    "type": 5,
     "value": 4550,
   },
   "magVar": Offset {

@@ -252,7 +252,7 @@ export const positionAttitude: OffsetList = {
     category: OffsetCategory.POSITION_ATTITUDE,
     description: 'mach speed',
     convert: '{VAL} / 20480',
-    type: Type.Int16,
+    type: Type.UInt16,
     permission: 'r',
   }),
 };

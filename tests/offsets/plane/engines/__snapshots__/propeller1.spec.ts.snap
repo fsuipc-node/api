@@ -10,7 +10,7 @@ Object {
     "mapping": undefined,
     "name": "propeller1AutofeatherArmed",
     "permission": "rw",
-    "type": 3,
+    "type": 6,
     "value": 9264,
   },
   "propeller1BetaBladeAngle": Offset {
@@ -32,7 +32,7 @@ Object {
     "mapping": undefined,
     "name": "propeller1DeiceSwitch",
     "permission": "rw",
-    "type": 3,
+    "type": 6,
     "value": 9280,
   },
   "propeller1FeatherSwitch": Offset {
@@ -43,7 +43,7 @@ Object {
     "mapping": undefined,
     "name": "propeller1FeatherSwitch",
     "permission": "rw",
-    "type": 3,
+    "type": 6,
     "value": 9268,
   },
   "propeller1Feathered": Offset {
@@ -54,7 +54,7 @@ Object {
     "mapping": undefined,
     "name": "propeller1Feathered",
     "permission": "r",
-    "type": 3,
+    "type": 6,
     "value": 9252,
   },
   "propeller1FeatheringInhibit": Offset {
@@ -65,7 +65,7 @@ Object {
     "mapping": undefined,
     "name": "propeller1FeatheringInhibit",
     "permission": "rw",
-    "type": 3,
+    "type": 6,
     "value": 9248,
   },
   "propeller1PanelAutofeatherSwitch": Offset {
@@ -76,7 +76,7 @@ Object {
     "mapping": undefined,
     "name": "propeller1PanelAutofeatherSwitch",
     "permission": "rw",
-    "type": 3,
+    "type": 6,
     "value": 9272,
   },
   "propeller1RPM": Offset {
@@ -109,7 +109,7 @@ Object {
     "mapping": undefined,
     "name": "propeller1Sync",
     "permission": "rw",
-    "type": 3,
+    "type": 6,
     "value": 9276,
   },
   "propeller1SyncDeltaLever": Offset {
@@ -120,7 +120,7 @@ Object {
     "mapping": undefined,
     "name": "propeller1SyncDeltaLever",
     "permission": "r",
-    "type": 4,
+    "type": 8,
     "value": 9256,
   },
   "propeller1Thrust": Offset {

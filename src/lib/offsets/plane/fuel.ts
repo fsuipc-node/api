@@ -148,7 +148,7 @@ export const fuel: OffsetList = {
     name: 'totalFuelCapacity',
     category: OffsetCategory.FUEL,
     description: 'total fuel capacity - US gallons',
-    type: Type.Int32,
+    type: Type.UInt32,
     permission: 'r',
   }),
   fuelCenter2TankLevel: new Offset({
@@ -158,7 +158,7 @@ export const fuel: OffsetList = {
     description: 'center 2 tank level - percent',
     convert: 'Math.round({VAL} / (128 * 65536) * 100)',
     type: Type.Int32,
-    permission: 'r',
+    permission: 'rw',
   }),
   fuelCenter2TankCapacity: new Offset({
     value: 0x1248,
@@ -175,7 +175,7 @@ export const fuel: OffsetList = {
     description: 'center 3 tank level - percent',
     convert: 'Math.round({VAL} / (128 * 65536) * 100)',
     type: Type.Int32,
-    permission: 'r',
+    permission: 'rw',
   }),
   fuelCenter3TankCapacity: new Offset({
     value: 0x1250,
@@ -192,7 +192,7 @@ export const fuel: OffsetList = {
     description: 'external 1 tank level - percent',
     convert: 'Math.round({VAL} / (128 * 65536) * 100)',
     type: Type.Int32,
-    permission: 'r',
+    permission: 'rw',
   }),
   fuelExternal1TankCapacity: new Offset({
     value: 0x1258,
@@ -209,7 +209,7 @@ export const fuel: OffsetList = {
     description: 'external 2 tank level - percent',
     convert: 'Math.round({VAL} / (128 * 65536) * 100)',
     type: Type.Int32,
-    permission: 'r',
+    permission: 'rw',
   }),
   fuelExternal2TankCapacity: new Offset({
     value: 0x1260,

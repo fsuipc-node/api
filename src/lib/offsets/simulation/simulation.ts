@@ -539,7 +539,7 @@ export const simulation: OffsetList = {
     name: 'textDisplayMode',
     category: OffsetCategory.SIMULATION,
     description: 'text display mode (eg: ATIS) - 0=static 1=scroll',
-    type: Type.Int16,
-    permission: 'r',
+    type: Type.UInt16,
+    permission: 'rw',
   }),
 };

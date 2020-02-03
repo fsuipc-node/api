@@ -328,7 +328,7 @@ export const engine1: OffsetList = {
     category: OffsetCategory.ENGINE,
     description: 'engine 1 turbine afterburner active',
     convert: '!!{VAL}',
-    type: Type.Int32,
+    type: Type.UInt32,
     permission: 'r',
   }),
   engine1TurbineJetThrust: new Offset({
@@ -346,7 +346,7 @@ export const engine1: OffsetList = {
     description: 'engine 1 turbine tank selector',
     convert: 'fuelTank',
     mapping: true,
-    type: Type.Int32,
+    type: Type.UInt32,
     permission: 'r',
   }),
   engine1TurbineUsedTank: new Offset({
@@ -363,7 +363,7 @@ export const engine1: OffsetList = {
     name: 'engine1TurbineAvailableTankCount',
     category: OffsetCategory.ENGINE,
     description: 'engine 1 turbine available tank count',
-    type: Type.Int32,
+    type: Type.UInt32,
     permission: 'r',
   }),
   engine1TurbineFuelFlow: new Offset({
@@ -380,7 +380,7 @@ export const engine1: OffsetList = {
     category: OffsetCategory.ENGINE,
     description: 'engine 1 turbine is fuel available flag',
     convert: '!!{VAL}',
-    type: Type.Int32,
+    type: Type.UInt32,
     permission: 'r',
   }),
   engine1TurbineBleedPressure: new Offset({
@@ -405,7 +405,7 @@ export const engine1: OffsetList = {
     name: 'engine1TurbineVibration',
     category: OffsetCategory.ENGINE,
     description: 'engine 1 turbine vibration',
-    type: Type.Int64,
+    type: Type.Double,
     permission: 'r',
   }),
   engine1TurbineIgnition: new Offset({
@@ -414,7 +414,7 @@ export const engine1: OffsetList = {
     category: OffsetCategory.ENGINE,
     description: 'engine 1 turbine is fuel available flag',
     convert: '!!{VAL}',
-    type: Type.Int32,
+    type: Type.UInt32,
     permission: 'rw',
   }),
 };

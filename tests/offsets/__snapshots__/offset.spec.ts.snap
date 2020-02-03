@@ -1484,7 +1484,7 @@ Object {
     "mapping": undefined,
     "name": "engine1TurbineAfterburnerActive",
     "permission": "r",
-    "type": 3,
+    "type": 6,
     "value": 8264,
   },
   "engine1TurbineAvailableTankCount": Offset {
@@ -1495,7 +1495,7 @@ Object {
     "mapping": undefined,
     "name": "engine1TurbineAvailableTankCount",
     "permission": "r",
-    "type": 3,
+    "type": 6,
     "value": 8284,
   },
   "engine1TurbineBleedPressure": Offset {
@@ -1583,7 +1583,7 @@ Object {
     "mapping": undefined,
     "name": "engine1TurbineIgnition",
     "permission": "rw",
-    "type": 3,
+    "type": 6,
     "value": 8332,
   },
   "engine1TurbineIsFuelAvailable": Offset {
@@ -1594,7 +1594,7 @@ Object {
     "mapping": undefined,
     "name": "engine1TurbineIsFuelAvailable",
     "permission": "r",
-    "type": 3,
+    "type": 6,
     "value": 8296,
   },
   "engine1TurbineJetThrust": Offset {
@@ -1649,7 +1649,7 @@ Object {
     "mapping": true,
     "name": "engine1TurbineTankSelector",
     "permission": "r",
-    "type": 3,
+    "type": 6,
     "value": 8276,
   },
   "engine1TurbineTorque": Offset {
@@ -1682,7 +1682,7 @@ Object {
     "mapping": undefined,
     "name": "engine1TurbineVibration",
     "permission": "r",
-    "type": 4,
+    "type": 8,
     "value": 8324,
   },
   "engine1Vibration": Offset {
@@ -2012,7 +2012,7 @@ Object {
     "mapping": undefined,
     "name": "engine2TurbineAfterburnerActive",
     "permission": "r",
-    "type": 3,
+    "type": 6,
     "value": 8520,
   },
   "engine2TurbineAvailableTankCount": Offset {
@@ -2023,7 +2023,7 @@ Object {
     "mapping": undefined,
     "name": "engine2TurbineAvailableTankCount",
     "permission": "r",
-    "type": 3,
+    "type": 6,
     "value": 8540,
   },
   "engine2TurbineBleedPressure": Offset {
@@ -2111,7 +2111,7 @@ Object {
     "mapping": undefined,
     "name": "engine2TurbineIgnition",
     "permission": "rw",
-    "type": 3,
+    "type": 6,
     "value": 8588,
   },
   "engine2TurbineIsFuelAvailable": Offset {
@@ -2122,7 +2122,7 @@ Object {
     "mapping": undefined,
     "name": "engine2TurbineIsFuelAvailable",
     "permission": "r",
-    "type": 3,
+    "type": 6,
     "value": 8552,
   },
   "engine2TurbineJetThrust": Offset {
@@ -2210,7 +2210,7 @@ Object {
     "mapping": undefined,
     "name": "engine2TurbineVibration",
     "permission": "r",
-    "type": 4,
+    "type": 8,
     "value": 8580,
   },
   "engine2Vibration": Offset {
@@ -2540,7 +2540,7 @@ Object {
     "mapping": undefined,
     "name": "engine3TurbineAfterburnerActive",
     "permission": "r",
-    "type": 3,
+    "type": 6,
     "value": 8776,
   },
   "engine3TurbineAvailableTankCount": Offset {
@@ -2551,7 +2551,7 @@ Object {
     "mapping": undefined,
     "name": "engine3TurbineAvailableTankCount",
     "permission": "r",
-    "type": 3,
+    "type": 6,
     "value": 8796,
   },
   "engine3TurbineBleedPressure": Offset {
@@ -2639,7 +2639,7 @@ Object {
     "mapping": undefined,
     "name": "engine3TurbineIgnition",
     "permission": "rw",
-    "type": 3,
+    "type": 6,
     "value": 8844,
   },
   "engine3TurbineIsFuelAvailable": Offset {
@@ -2650,7 +2650,7 @@ Object {
     "mapping": undefined,
     "name": "engine3TurbineIsFuelAvailable",
     "permission": "r",
-    "type": 3,
+    "type": 6,
     "value": 8808,
   },
   "engine3TurbineJetThrust": Offset {
@@ -2705,7 +2705,7 @@ Object {
     "mapping": true,
     "name": "engine3TurbineTankSelector",
     "permission": "r",
-    "type": 3,
+    "type": 6,
     "value": 8788,
   },
   "engine3TurbineTorque": Offset {
@@ -2738,7 +2738,7 @@ Object {
     "mapping": undefined,
     "name": "engine3TurbineVibration",
     "permission": "r",
-    "type": 4,
+    "type": 8,
     "value": 8836,
   },
   "engine3Vibration": Offset {
@@ -3068,7 +3068,7 @@ Object {
     "mapping": undefined,
     "name": "engine4TurbineAfterburnerActive",
     "permission": "r",
-    "type": 3,
+    "type": 6,
     "value": 9032,
   },
   "engine4TurbineAvailableTankCount": Offset {
@@ -3079,7 +3079,7 @@ Object {
     "mapping": undefined,
     "name": "engine4TurbineAvailableTankCount",
     "permission": "r",
-    "type": 3,
+    "type": 6,
     "value": 9052,
   },
   "engine4TurbineBleedPressure": Offset {
@@ -3167,7 +3167,7 @@ Object {
     "mapping": undefined,
     "name": "engine4TurbineIgnition",
     "permission": "rw",
-    "type": 3,
+    "type": 6,
     "value": 9100,
   },
   "engine4TurbineIsFuelAvailable": Offset {
@@ -3178,7 +3178,7 @@ Object {
     "mapping": undefined,
     "name": "engine4TurbineIsFuelAvailable",
     "permission": "r",
-    "type": 3,
+    "type": 6,
     "value": 9064,
   },
   "engine4TurbineJetThrust": Offset {
@@ -3233,7 +3233,7 @@ Object {
     "mapping": true,
     "name": "engine4TurbineTankSelector",
     "permission": "r",
-    "type": 3,
+    "type": 6,
     "value": 9044,
   },
   "engine4TurbineTorque": Offset {
@@ -3266,7 +3266,7 @@ Object {
     "mapping": undefined,
     "name": "engine4TurbineVibration",
     "permission": "r",
-    "type": 4,
+    "type": 8,
     "value": 9092,
   },
   "engine4Vibration": Offset {
@@ -3496,7 +3496,7 @@ Object {
     "length": undefined,
     "mapping": undefined,
     "name": "fuelCenter2TankLevel",
-    "permission": "r",
+    "permission": "rw",
     "type": 3,
     "value": 4676,
   },
@@ -3518,7 +3518,7 @@ Object {
     "length": undefined,
     "mapping": undefined,
     "name": "fuelCenter3TankLevel",
-    "permission": "r",
+    "permission": "rw",
     "type": 3,
     "value": 4684,
   },
@@ -3562,7 +3562,7 @@ Object {
     "length": undefined,
     "mapping": undefined,
     "name": "fuelExternal1TankLevel",
-    "permission": "r",
+    "permission": "rw",
     "type": 3,
     "value": 4692,
   },
@@ -3584,7 +3584,7 @@ Object {
     "length": undefined,
     "mapping": undefined,
     "name": "fuelExternal2TankLevel",
-    "permission": "r",
+    "permission": "rw",
     "type": 3,
     "value": 4700,
   },
@@ -4608,7 +4608,7 @@ Object {
     "mapping": undefined,
     "name": "machSpeed",
     "permission": "r",
-    "type": 2,
+    "type": 5,
     "value": 4550,
   },
   "macroOrLuaParameters": Offset {
@@ -5290,7 +5290,7 @@ Object {
     "mapping": undefined,
     "name": "propeller1AutofeatherArmed",
     "permission": "rw",
-    "type": 3,
+    "type": 6,
     "value": 9264,
   },
   "propeller1BetaBladeAngle": Offset {
@@ -5312,7 +5312,7 @@ Object {
     "mapping": undefined,
     "name": "propeller1DeiceSwitch",
     "permission": "rw",
-    "type": 3,
+    "type": 6,
     "value": 9280,
   },
   "propeller1FeatherSwitch": Offset {
@@ -5323,7 +5323,7 @@ Object {
     "mapping": undefined,
     "name": "propeller1FeatherSwitch",
     "permission": "rw",
-    "type": 3,
+    "type": 6,
     "value": 9268,
   },
   "propeller1Feathered": Offset {
@@ -5334,7 +5334,7 @@ Object {
     "mapping": undefined,
     "name": "propeller1Feathered",
     "permission": "r",
-    "type": 3,
+    "type": 6,
     "value": 9252,
   },
   "propeller1FeatheringInhibit": Offset {
@@ -5345,7 +5345,7 @@ Object {
     "mapping": undefined,
     "name": "propeller1FeatheringInhibit",
     "permission": "rw",
-    "type": 3,
+    "type": 6,
     "value": 9248,
   },
   "propeller1PanelAutofeatherSwitch": Offset {
@@ -5356,7 +5356,7 @@ Object {
     "mapping": undefined,
     "name": "propeller1PanelAutofeatherSwitch",
     "permission": "rw",
-    "type": 3,
+    "type": 6,
     "value": 9272,
   },
   "propeller1RPM": Offset {
@@ -5389,7 +5389,7 @@ Object {
     "mapping": undefined,
     "name": "propeller1Sync",
     "permission": "rw",
-    "type": 3,
+    "type": 6,
     "value": 9276,
   },
   "propeller1SyncDeltaLever": Offset {
@@ -5400,7 +5400,7 @@ Object {
     "mapping": undefined,
     "name": "propeller1SyncDeltaLever",
     "permission": "r",
-    "type": 4,
+    "type": 8,
     "value": 9256,
   },
   "propeller1Thrust": Offset {
@@ -6367,8 +6367,8 @@ Object {
     "length": undefined,
     "mapping": undefined,
     "name": "textDisplayMode",
-    "permission": "r",
-    "type": 2,
+    "permission": "rw",
+    "type": 5,
     "value": 4724,
   },
   "textureQuality": Offset {
@@ -6445,7 +6445,7 @@ Object {
     "mapping": undefined,
     "name": "totalFuelCapacity",
     "permission": "r",
-    "type": 3,
+    "type": 6,
     "value": 4672,
   },
   "towerAltitude": Offset {

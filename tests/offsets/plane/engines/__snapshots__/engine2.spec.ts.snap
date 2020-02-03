@@ -318,7 +318,7 @@ Object {
     "mapping": undefined,
     "name": "engine2TurbineAfterburnerActive",
     "permission": "r",
-    "type": 3,
+    "type": 6,
     "value": 8520,
   },
   "engine2TurbineAvailableTankCount": Offset {
@@ -329,7 +329,7 @@ Object {
     "mapping": undefined,
     "name": "engine2TurbineAvailableTankCount",
     "permission": "r",
-    "type": 3,
+    "type": 6,
     "value": 8540,
   },
   "engine2TurbineBleedPressure": Offset {
@@ -417,7 +417,7 @@ Object {
     "mapping": undefined,
     "name": "engine2TurbineIgnition",
     "permission": "rw",
-    "type": 3,
+    "type": 6,
     "value": 8588,
   },
   "engine2TurbineIsFuelAvailable": Offset {
@@ -428,7 +428,7 @@ Object {
     "mapping": undefined,
     "name": "engine2TurbineIsFuelAvailable",
     "permission": "r",
-    "type": 3,
+    "type": 6,
     "value": 8552,
   },
   "engine2TurbineJetThrust": Offset {
@@ -516,7 +516,7 @@ Object {
     "mapping": undefined,
     "name": "engine2TurbineVibration",
     "permission": "r",
-    "type": 4,
+    "type": 8,
     "value": 8580,
   },
   "engine2Vibration": Offset {
