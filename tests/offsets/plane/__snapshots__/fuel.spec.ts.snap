@@ -257,10 +257,10 @@ Object {
   },
   "fuelTankSelector": Offset {
     "category": "fuel",
-    "convert": undefined,
-    "description": "0=Off, 1=All, 2=Left, 3=Right, 4=LeftAux, 5=RightAux, 6=Center, 7=Centre2, 8=Centre3, 9=Ext1, 10=Ext2, 11=RtTip, 12=LftTip, 13=CrossFeed, 14=CrossFeed Left to Right, 15=CrossFeed Right to Left, 16=crossfeed both, 17=external, 18=isolate, 19=left main, 20=right main --- Engine 1 only",
+    "convert": "fuelTank",
+    "description": "Engine 1 only",
     "length": undefined,
-    "mapping": undefined,
+    "mapping": true,
     "name": "fuelTankSelector",
     "permission": "rw",
     "type": 2,

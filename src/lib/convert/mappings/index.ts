@@ -11,6 +11,7 @@ import { spoilersControl } from './spoilers-control';
 import { vorToFrom } from './vor-to-from';
 import { navBackCourseFlags } from './nav-back-course-flags';
 import { navCapabilities } from './nav-capabilities';
+import { fuelTank } from './fuel-tank';
 
 export const MAPPINGS: { [key: string]: (_: any) => any } = {
   lightsMapping,
@@ -29,6 +30,7 @@ export const MAPPINGS: { [key: string]: (_: any) => any } = {
   engineType,
   appliedBrakes,
   spoilersControl,
+  fuelTank,
 
   // environment
   nearestAirportsIds,
@@ -50,3 +52,4 @@ export * from './spoilers-control';
 export * from './vor-to-from';
 export * from './nav-back-course-flags';
 export * from './nav-capabilities';
+export * from './fuel-tank';

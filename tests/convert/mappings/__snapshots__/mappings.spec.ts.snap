@@ -6,6 +6,7 @@ Object {
   "cloudType": [Function],
   "engineType": [Function],
   "ftsecToKt": [Function],
+  "fuelTank": [Function],
   "ktToFtsec": [Function],
   "lightsMapping": [Function],
   "navBackCourseFlags": [Function],
