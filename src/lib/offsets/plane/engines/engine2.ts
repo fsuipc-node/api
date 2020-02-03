@@ -396,6 +396,7 @@ export const engine2: OffsetList = {
     name: 'engine2TurbineReverser',
     category: OffsetCategory.ENGINE,
     description: 'engine 2 turbine reverser position - 0.0 - 1.0 lb/sq in',
+    convert: 'Math.round(+(+({VAL}).toFixed(4) * 100).toFixed(2))',
     type: Type.Double,
     permission: 'r',
   }),

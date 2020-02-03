@@ -466,7 +466,7 @@ Object {
   },
   "engine2TurbineReverser": Offset {
     "category": "engine",
-    "convert": undefined,
+    "convert": "Math.round(+(+({VAL}).toFixed(4) * 100).toFixed(2))",
     "description": "engine 2 turbine reverser position - 0.0 - 1.0 lb/sq in",
     "length": undefined,
     "mapping": undefined,

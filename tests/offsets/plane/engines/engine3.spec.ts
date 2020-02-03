@@ -34,6 +34,7 @@ describe('offset - plane/engines/engine3', () => {
     { name: 'engine3TurbineAfterburnerActive', value: 1, expectedResult: true },
     { name: 'engine3TurbineIsFuelAvailable', value: 0, expectedResult: false },
     { name: 'engine3TurbineIsFuelAvailable', value: 1, expectedResult: true },
+    { name: 'engine3TurbineReverser', value: 0.02386, expectedResult: 2 },
     { name: 'engine3TurbineIgnition', value: 0, expectedResult: false },
     { name: 'engine3TurbineIgnition', value: 1, expectedResult: true },
   ];
