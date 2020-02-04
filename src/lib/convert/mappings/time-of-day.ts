@@ -8,5 +8,7 @@ export const timeOfDay = (value: number): TimeOfDay => {
       return TimeOfDay.DUSK_DAWN;
     case 3:
       return TimeOfDay.NIGHT;
+    default:
+      return null;
   }
 };

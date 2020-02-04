@@ -8,5 +8,7 @@ export const vorToFrom = (value: number): VorToFrom => {
       return VorToFrom.TO;
     case 2:
       return VorToFrom.FROM;
+    default:
+      return null;
   }
 };

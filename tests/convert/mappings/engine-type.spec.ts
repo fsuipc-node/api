@@ -8,6 +8,8 @@ const TESTS = [
   { value: 3, result: EngineType.HELO },
   { value: 4, result: EngineType.ROCKET },
   { value: 5, result: EngineType.TURBOPROP },
+  { value: 6, result: null },
+  { value: null, result: null },
 ];
 
 describe('engine-type mapping', () => {

@@ -44,6 +44,7 @@ export const fuelTank = (value: number): FuelTank => {
       return FuelTank.LEFT_MAIN;
     case 20:
       return FuelTank.RIGHT_MAIN;
-
+    default:
+      return null;
   }
 };

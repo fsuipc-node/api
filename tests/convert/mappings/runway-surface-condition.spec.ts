@@ -6,6 +6,8 @@ const TESTS = [
   { value: 1, result: SurfaceCondition.WET },
   { value: 2, result: SurfaceCondition.ICY },
   { value: 3, result: SurfaceCondition.SNOW },
+  { value: 4, result: null },
+  { value: null, result: null },
 ];
 
 describe('runway surface condition mapping', () => {

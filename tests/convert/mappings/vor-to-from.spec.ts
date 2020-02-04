@@ -5,6 +5,8 @@ const TESTS = [
   { value: 0, result: VorToFrom.OFF },
   { value: 1, result: VorToFrom.TO },
   { value: 2, result: VorToFrom.FROM },
+  { value: 3, result: null },
+  { value: null, result: null },
 ];
 
 describe('vor-to-from mapping', () => {

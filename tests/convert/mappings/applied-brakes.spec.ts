@@ -2,6 +2,7 @@ import { appliedBrakes } from '@mappings/applied-brakes';
 import { Brakes } from '@shared/plane/brakes';
 
 const TESTS = [
+  { value: null, result: null },
   { value: 0, result: null },
   { value: 1, result: Brakes.LEFT },
   { value: 2, result: Brakes.RIGHT },

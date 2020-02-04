@@ -5,6 +5,8 @@ const TESTS = [
   { value: 0, result: PrecipitationType.NONE },
   { value: 1, result: PrecipitationType.RAIN },
   { value: 2, result: PrecipitationType.SNOW },
+  { value: 3, result: null },
+  { value: null, result: null },
 ];
 
 describe('precipitation type mapping', () => {
