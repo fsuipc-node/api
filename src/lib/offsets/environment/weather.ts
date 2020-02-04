@@ -3,6 +3,8 @@ import { Type } from 'fsuipc';
 import { OffsetCategory } from '@shared/offset-category';
 import { OffsetList } from '@shared/offset-list';
 import { Offset } from '@shared/offset';
+import { weatherAtAircraft } from './weather/at-aircraft';
+import { weatherSettings } from './weather/settings';
 
 export const weather: OffsetList = {
   metarStationAltitude: new Offset({
@@ -237,4 +239,40 @@ export const weather: OffsetList = {
     type: Type.UInt16,
     permission: 'r',
   }),
+  windGust: new Offset({
+    value: 0xE94,
+    name: 'windGust',
+    category: OffsetCategory.WEATHER,
+    description: 'wind gust at aircraft - kt',
+    type: Type.UInt16,
+    permission: 'r',
+  }),
+  windDirectionalVariation: new Offset({
+    value: 0xE96,
+    name: 'windDirectionalVariation',
+    category: OffsetCategory.WEATHER,
+    description: 'wind directional variation at aircraft - TRUE degrees',
+    convert: '+({VAL} * 360 / 65536).toFixed(2)',
+    type: Type.UInt16,
+    permission: 'r',
+  }),
+  windTurbulence: new Offset({
+    value: 0xE98,
+    name: 'windTurbulence',
+    category: OffsetCategory.WEATHER,
+    description: 'wind turbulence at aircraft atltitude - 0-255',
+    type: Type.UInt16,
+    permission: 'r',
+  }),
+  totalAirTemperature: new Offset({
+    value: 0x11D0,
+    name: 'totalAirTemperature',
+    category: OffsetCategory.WEATHER,
+    description: 'total air temperature',
+    convert: 'Math.round({VAL} / 256)',
+    type: Type.Int16,
+    permission: 'r',
+  }),
+  ...weatherAtAircraft,
+  ...weatherSettings,
 };

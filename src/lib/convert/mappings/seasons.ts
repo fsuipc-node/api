@@ -10,5 +10,7 @@ export const seasons = (value: number): Season => {
       return Season.SUMMER;
     case 3:
       return Season.AUTUMN;
+    default:
+      return null;
   }
 };

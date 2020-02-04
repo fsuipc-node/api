@@ -2,6 +2,39 @@
 
 exports[`offset - plane/plane offsets list should have required properties 1`] = `
 Object {
+  "aircraftEmptyWeight": Offset {
+    "category": "plane",
+    "convert": "+({VAL} / 256).toFixed(2)",
+    "description": "aicraft empty weight",
+    "length": undefined,
+    "mapping": undefined,
+    "name": "aircraftEmptyWeight",
+    "permission": "r",
+    "type": 3,
+    "value": 4912,
+  },
+  "aircraftMaxGrossWeight": Offset {
+    "category": "plane",
+    "convert": "+({VAL} / 256).toFixed(2)",
+    "description": "aicraft max gross weight",
+    "length": undefined,
+    "mapping": undefined,
+    "name": "aircraftMaxGrossWeight",
+    "permission": "r",
+    "type": 3,
+    "value": 4916,
+  },
+  "fuelSelectorsCount": Offset {
+    "category": "plane",
+    "convert": undefined,
+    "description": "number of fuel selectors for the aircraft",
+    "length": undefined,
+    "mapping": undefined,
+    "name": "fuelSelectorsCount",
+    "permission": "r",
+    "type": 0,
+    "value": 4670,
+  },
   "hasCarbHeat": Offset {
     "category": "plane",
     "convert": "!!{VAL}",

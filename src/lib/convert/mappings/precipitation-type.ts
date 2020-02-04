@@ -8,5 +8,7 @@ export const precipitationType = (value: number): PrecipitationType => {
       return PrecipitationType.RAIN;
     case 2:
       return PrecipitationType.SNOW;
+    default:
+      return null;
   }
 };

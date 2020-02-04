@@ -6,6 +6,8 @@ const TESTS = [
   { value: 1, result: Season.SPRING },
   { value: 2, result: Season.SUMMER },
   { value: 3, result: Season.AUTUMN },
+  { value: 4, result: null },
+  { value: null, result: null },
 ];
 
 describe('seasons mapping', () => {

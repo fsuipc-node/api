@@ -30,6 +30,13 @@ describe('offset - plane/engines/engine2', () => {
     { name: 'engine2ITT', value: 3276800, expectedResult: 200 },
     { name: 'engine2Torque', value: 8192, expectedResult: 50 },
     { name: 'engine2FuelPres', value: 288, expectedResult: 2 },
+    { name: 'engine2TurbineAfterburnerActive', value: 0, expectedResult: false },
+    { name: 'engine2TurbineAfterburnerActive', value: 1, expectedResult: true },
+    { name: 'engine2TurbineIsFuelAvailable', value: 0, expectedResult: false },
+    { name: 'engine2TurbineIsFuelAvailable', value: 1, expectedResult: true },
+    { name: 'engine2TurbineReverser', value: 0.02386, expectedResult: 2 },
+    { name: 'engine2TurbineIgnition', value: 0, expectedResult: false },
+    { name: 'engine2TurbineIgnition', value: 1, expectedResult: true },
   ];
 
   describe('offsets list', () => {

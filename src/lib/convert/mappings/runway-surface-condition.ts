@@ -10,5 +10,7 @@ export const runwaySurfaceCondition = (value: number): SurfaceCondition => {
       return SurfaceCondition.ICY;
     case 3:
       return SurfaceCondition.SNOW;
+    default:
+      return null;
   }
 };

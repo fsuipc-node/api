@@ -3,8 +3,10 @@
 exports[`mappings list should import all mappings 1`] = `
 Object {
   "appliedBrakes": [Function],
+  "cloudType": [Function],
   "engineType": [Function],
   "ftsecToKt": [Function],
+  "fuelTank": [Function],
   "ktToFtsec": [Function],
   "lightsMapping": [Function],
   "navBackCourseFlags": [Function],

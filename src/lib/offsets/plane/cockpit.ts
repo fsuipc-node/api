@@ -279,4 +279,12 @@ export const cockpit: OffsetList = {
     type: Type.UInt16,
     permission: 'r',
   }),
+  fuelFlowAtCruise: new Offset({
+    value: 0x1270,
+    name: 'fuelFlowAtCruise',
+    category: OffsetCategory.COCKPIT,
+    description: 'Estimated fuel flow at cruise - lb/h',
+    type: Type.Int32,
+    permission: 'r',
+  }),
 };

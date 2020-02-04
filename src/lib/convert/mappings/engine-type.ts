@@ -14,5 +14,7 @@ export const engineType = (value: number): EngineType => {
       return EngineType.ROCKET;
     case 5:
       return EngineType.TURBOPROP;
+    default:
+      return null;
   }
 };

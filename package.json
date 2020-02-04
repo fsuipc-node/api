@@ -1,6 +1,6 @@
 {
   "name": "@fsuipc/api",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "author": {
     "name": "FSUIPC-Node Opensource Team",
     "url": "https://github.com/fsuipc-node"
@@ -39,16 +39,16 @@
   },
   "devDependencies": {
     "@exalif/tscpaths": "0.1.3",
-    "@types/jest": "24.0.25",
-    "@types/node": "13.1.6",
+    "@types/jest": "25.1.1",
+    "@types/node": "13.5.3",
     "conventional-changelog-cli": "2.0.31",
-    "cross-env": "6.0.3",
-    "jest": "24.9.0",
+    "cross-env": "7.0.0",
+    "jest": "25.1.0",
     "nodemon": "2.0.2",
-    "ts-jest": "24.3.0",
-    "ts-node": "8.6.1",
+    "ts-jest": "25.1.0",
+    "ts-node": "8.6.2",
     "tsconfig-paths": "3.9.0",
-    "tslint": "5.20.1",
-    "typescript": "3.7.4"
+    "tslint": "6.0.0",
+    "typescript": "3.7.5"
   }
 }
