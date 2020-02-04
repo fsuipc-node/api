@@ -3,6 +3,7 @@ export enum OffsetCategory {
   AUTOPILOT = 'autopilot',
   COCKPIT = 'cockpit',
   CONTROLS = 'controls',
+  ELECTRIC = 'electric',
   ENGINE = 'engine',
   ENVIRONMENT = 'environment',
   FAILURE = 'failure',
