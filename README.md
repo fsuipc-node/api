@@ -3,6 +3,7 @@
 Tooling to use FSUIPC external application interface, with nodeJS.
 
 [![Coverage Status](https://coveralls.io/repos/github/fsuipc-node/api/badge.svg?branch=master)](https://coveralls.io/github/fsuipc-node/api?branch=master)
+[![npm version](https://badge.fury.io/js/%40fsuipc%2Fapi.svg)](https://badge.fury.io/js/%40fsuipc%2Fapi)
 ![branch-master](https://github.com/fsuipc-node/api/workflows/branch-master/badge.svg?branch=master)
 
 ## Disclamer
