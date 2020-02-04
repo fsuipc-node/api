@@ -1,9 +1,9 @@
 # @fsuipc/api - FSUIPC Node API
 
+Tooling to use FSUIPC external application interface, with nodeJS.
+
 [![Coverage Status](https://coveralls.io/repos/github/fsuipc-node/api/badge.svg?branch=master)](https://coveralls.io/github/fsuipc-node/api?branch=master)
 ![branch-master](https://github.com/fsuipc-node/api/workflows/branch-master/badge.svg?branch=master)
-
-Tooling to use FSUIPC external application interface, with nodeJS.
 
 ## Disclamer
 
