@@ -59,4 +59,22 @@ export const hydraulic: OffsetList = {
     type: Type.Double,
     permission: 'r',
   }),
+  hyd4Pressure: new Offset({
+    value: 0x2E08,
+    name: 'hyd4Pressure',
+    category: OffsetCategory.HYDRAULIC,
+    description: 'hyd4 pressure',
+    type: Type.Double,
+    permission: 'r',
+  }),
+  hyd4Reservoir: new Offset({
+    value: 0x2E1C,
+    name: 'hyd4Reservoir',
+    category: OffsetCategory.HYDRAULIC,
+    description: 'hyd4 reservoir percent',
+    convert: 'doublePercentRound',
+    mapping: true,
+    type: Type.Double,
+    permission: 'r',
+  }),
 };

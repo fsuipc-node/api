@@ -156,6 +156,17 @@ Object {
     "type": 6,
     "value": 1980,
   },
+  "apMaxBank": Offset {
+    "category": "autopilot",
+    "convert": undefined,
+    "description": "AP max bank - degrees",
+    "length": undefined,
+    "mapping": undefined,
+    "name": "apMaxBank",
+    "permission": "r",
+    "type": 6,
+    "value": 11780,
+  },
   "apNav1Hold": Offset {
     "category": "autopilot",
     "convert": "!!{VAL}",

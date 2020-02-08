@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`offset - plane/weightAndBalance offsets list should have required properties 1`] = `
+Object {
+  "lateralCGPercent": Offset {
+    "category": "seaplane",
+    "convert": "doublePercentRound",
+    "description": "lateral CG - percent from chord",
+    "length": undefined,
+    "mapping": true,
+    "name": "lateralCGPercent",
+    "permission": "r",
+    "type": 8,
+    "value": 11896,
+  },
+}
+`;

@@ -264,4 +264,12 @@ export const autopilot: OffsetList = {
     type: Type.UInt32,
     permission: 'rw',
   }),
+  apMaxBank: new Offset({
+    value: 0x2E04,
+    name: 'apMaxBank',
+    category: OffsetCategory.AUTOPILOT,
+    description: 'AP max bank - degrees',
+    type: Type.UInt32,
+    permission: 'r',
+  }),
 };
