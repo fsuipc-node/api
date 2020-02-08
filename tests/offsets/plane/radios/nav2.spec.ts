@@ -40,6 +40,8 @@ describe('offset - plane/radios/nav2', () => {
     { name: 'nav2GlideslopeNeedlePosition', value: -127, expectedResult: -100 },
     { name: 'nav2GlideslopeActive', value: 0, expectedResult: false },
     { name: 'nav2GlideslopeActive', value: 1, expectedResult: true },
+    { name: 'nav2CDI', value: 102.786, expectedResult: 81 },
+    { name: 'nav2GSI', value: 102.786, expectedResult: 81 },
   ];
 
   describe('offsets list', () => {

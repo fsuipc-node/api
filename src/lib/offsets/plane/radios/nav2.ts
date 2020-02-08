@@ -270,4 +270,22 @@ export const NAV2: OffsetList = {
     length: 8,
     permission: 'r',
   }),
+  nav2CDI: new Offset({
+    value: 0x2AB4,
+    name: 'nav2CDI',
+    category: OffsetCategory.RADIOS,
+    description: 'NAV2 course deviation needle - percent - -ve left +ve right',
+    convert: 'Math.round({VAL} * 100 / 127)',
+    type: Type.Single,
+    permission: 'r',
+  }),
+  nav2GSI: new Offset({
+    value: 0x2AB8,
+    name: 'nav2GSI',
+    category: OffsetCategory.RADIOS,
+    description: 'NAV2 glideslope indicator - percent - -ve left +ve right',
+    convert: 'Math.round({VAL} * 100 / 127)',
+    type: Type.Single,
+    permission: 'r',
+  }),
 };

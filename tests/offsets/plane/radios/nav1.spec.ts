@@ -40,6 +40,8 @@ describe('offset - plane/radios/nav1', () => {
     { name: 'nav1GlideslopeActive', value: 0, expectedResult: false },
     { name: 'nav1GlideslopeActive', value: 1, expectedResult: true },
     { name: 'nav1Radial', value: 9102, expectedResult: 50 },
+    { name: 'nav1CDI', value: 102.786, expectedResult: 81 },
+    { name: 'nav1GSI', value: 102.786, expectedResult: 81 },
   ];
 
   describe('offsets list', () => {
