@@ -16,6 +16,7 @@ export enum OffsetCategory {
   PUSHBACK = 'pushback',
   RADIOS = 'radios',
   RUNWAY = 'runway',
+  SEAPLANE = 'seaplane',
   SIMULATION = 'simulation',
   WEATHER = 'weather',
 }

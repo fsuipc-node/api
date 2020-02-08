@@ -39,6 +39,8 @@ describe('offset - plane/controls', () => {
     { name: 'steeringTillerCalibratedValue', value: -16383, expectedResult: -100 },
     { name: 'rudderCalibratedvalue', value: 16383, expectedResult: 100 },
     { name: 'rudderCalibratedvalue', value: -16383, expectedResult: -100 },
+    { name: 'tailWheelLocked', value: 0, expectedResult: false },
+    { name: 'tailWheelLocked', value: 1, expectedResult: true },
   ];
 
   describe('offsets list', () => {

@@ -12,6 +12,7 @@ import { controls } from './plane/controls';
 import { fuel } from './plane/fuel';
 import { cockpit } from './plane/cockpit';
 import { radios } from './plane/radios';
+import { seaplane } from './plane/seaplane';
 import { pressurisation } from './plane/pressurisation';
 import { icing } from './plane/icing';
 import { engines } from './plane/engines';
@@ -49,6 +50,7 @@ export const OFFSETS: OffsetList  = {
   ...engines,
   ...autopilot,
   ...electric,
+  ...seaplane,
 };
 
 export * from './airport/runway';
@@ -62,6 +64,7 @@ export * from './plane/controls';
 export * from './plane/cockpit';
 export * from './plane/fuel';
 export * from './plane/radios';
+export * from './plane/seaplane';
 export * from './plane/pressurisation';
 export * from './plane/icing';
 export * from './plane/engines';

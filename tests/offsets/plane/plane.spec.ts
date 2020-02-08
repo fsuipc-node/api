@@ -7,8 +7,6 @@ describe('offset - plane/plane', () => {
     { name: 'smokeSystemControl', value: 1, expectedResult: true },
     { name: 'retractableGear', value: 0, expectedResult: false },
     { name: 'retractableGear', value: 1, expectedResult: true },
-    { name: 'retractableLeftFloatExtension', value: 13200, expectedResult: 80 },
-    { name: 'retractableRightFloatExtension', value: 13200, expectedResult: 80 },
     { name: 'hasFlaps', value: 0, expectedResult: false },
     { name: 'hasFlaps', value: 1, expectedResult: true },
     { name: 'hasStallHorn', value: 0, expectedResult: false },
