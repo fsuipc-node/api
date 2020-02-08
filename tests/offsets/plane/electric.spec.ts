@@ -5,6 +5,8 @@ describe('offset - plane/electric', () => {
   const offsetsTestCases = [
     { name: 'masterBatterySwitch', value: 0, expectedResult: false },
     { name: 'masterBatterySwitch', value: 1, expectedResult: true },
+    { name: 'masterAvionicsSwitch', value: 0, expectedResult: false },
+    { name: 'masterAvionicsSwitch', value: 1, expectedResult: true },
   ];
 
   describe('offsets list', () => {

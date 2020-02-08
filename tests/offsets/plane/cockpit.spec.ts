@@ -31,6 +31,12 @@ describe('offset - plane/cockpit', () => {
     { name: 'altitudeChangeRate321EFIS', value: 0, expectedResult: 100 },
     { name: 'altitudeChangeRate321EFIS', value: 1, expectedResult: 1000 },
     { name: 'gyroCompassHeading', value: 167.54, expectedResult: 168 },
+    { name: 'panelAutoFeatherArmSwitch', value: 0, expectedResult: false },
+    { name: 'panelAutoFeatherArmSwitch', value: 1, expectedResult: true },
+    { name: 'standbyVacuumCircuitActive', value: 0, expectedResult: false },
+    { name: 'standbyVacuumCircuitActive', value: 1, expectedResult: true },
+    { name: 'propSyncActive', value: 0, expectedResult: false },
+    { name: 'propSyncActive', value: 1, expectedResult: true },
   ];
 
   describe('offsets list', () => {
