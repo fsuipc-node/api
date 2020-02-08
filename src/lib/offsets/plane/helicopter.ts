@@ -146,4 +146,13 @@ export const helicopter: OffsetList = {
     type: Type.Int16,
     permission: 'rw',
   }),
+  helicopterBeep: new Offset({
+    value: 0x2DC6,
+    name: 'helicopterBeep',
+    description: 'helicopter beep',
+    category: OffsetCategory.HELICOPTER,
+    convert: '!!{VAL}',
+    type: Type.UInt16,
+    permission: 'r',
+  }),
 };

@@ -30,6 +30,7 @@ describe('offset - plane/cockpit', () => {
     { name: 'autopilotSpeedSwitch321EFIS', value: 1, expectedResult: true },
     { name: 'altitudeChangeRate321EFIS', value: 0, expectedResult: 100 },
     { name: 'altitudeChangeRate321EFIS', value: 1, expectedResult: 1000 },
+    { name: 'gyroCompassHeading', value: 167.54, expectedResult: 168 },
   ];
 
   describe('offsets list', () => {

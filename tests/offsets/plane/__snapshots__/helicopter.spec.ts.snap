@@ -24,6 +24,17 @@ Object {
     "type": 2,
     "value": 3078,
   },
+  "helicopterBeep": Offset {
+    "category": "helicopter",
+    "convert": "!!{VAL}",
+    "description": "helicopter beep",
+    "length": undefined,
+    "mapping": undefined,
+    "name": "helicopterBeep",
+    "permission": "r",
+    "type": 5,
+    "value": 11718,
+  },
   "helicopterEngine1ElectricalLoad": Offset {
     "category": "helicopter",
     "convert": "{VAL} / 16384 * 100",

@@ -4215,6 +4215,17 @@ Object {
     "type": 3,
     "value": 692,
   },
+  "gyroCompassHeading": Offset {
+    "category": "cockpit",
+    "convert": "Math.round({VAL})",
+    "description": "gyro compass heading (MAG) including drift",
+    "length": undefined,
+    "mapping": undefined,
+    "name": "gyroCompassHeading",
+    "permission": "r",
+    "type": 8,
+    "value": 11008,
+  },
   "gyroDrift": Offset {
     "category": "cockpit",
     "convert": "Math.round({VAL} * 360 / 65536)",

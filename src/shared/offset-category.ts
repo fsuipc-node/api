@@ -9,6 +9,7 @@ export enum OffsetCategory {
   FAILURE = 'failure',
   FUEL = 'fuel',
   HELICOPTER = 'helicopter',
+  HYDRAULIC = 'hydraulic',
   ICING = 'icing',
   PLANE = 'plane',
   POSITION_ATTITUDE = 'position_attitude',

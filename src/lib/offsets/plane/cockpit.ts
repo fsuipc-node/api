@@ -287,4 +287,13 @@ export const cockpit: OffsetList = {
     type: Type.Int32,
     permission: 'r',
   }),
+  gyroCompassHeading: new Offset({
+    value: 0x2B00,
+    name: 'gyroCompassHeading',
+    category: OffsetCategory.COCKPIT,
+    description: 'gyro compass heading (MAG) including drift',
+    convert: 'Math.round({VAL})',
+    type: Type.Double,
+    permission: 'r',
+  }),
 };
