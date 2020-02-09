@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`offset - plane/seaplane offsets list should have required properties 1`] = `
+Object {
+  "retractableLeftFloatExtension": Offset {
+    "category": "seaplane",
+    "convert": "Math.floor({VAL} / 16384 * 100)",
+    "description": "retractable left float extension - percent",
+    "length": undefined,
+    "mapping": undefined,
+    "name": "retractableLeftFloatExtension",
+    "permission": "r",
+    "type": 5,
+    "value": 1556,
+  },
+  "retractableRightFloatExtension": Offset {
+    "category": "seaplane",
+    "convert": "Math.floor({VAL} / 16384 * 100)",
+    "description": "retractable right float extension - percent",
+    "length": undefined,
+    "mapping": undefined,
+    "name": "retractableRightFloatExtension",
+    "permission": "r",
+    "type": 5,
+    "value": 1558,
+  },
+  "waterLeftRudderExtended": Offset {
+    "category": "seaplane",
+    "convert": undefined,
+    "description": "water left rudder extended",
+    "length": undefined,
+    "mapping": undefined,
+    "name": "waterLeftRudderExtended",
+    "permission": "r",
+    "type": 8,
+    "value": 10872,
+  },
+  "waterRightRudderExtended": Offset {
+    "category": "seaplane",
+    "convert": undefined,
+    "description": "water right rudder extended",
+    "length": undefined,
+    "mapping": undefined,
+    "name": "waterRightRudderExtended",
+    "permission": "r",
+    "type": 8,
+    "value": 10880,
+  },
+  "waterRudderHandlePosition": Offset {
+    "category": "seaplane",
+    "convert": "Math.floor({VAL} / 16384 * 100)",
+    "description": "water rudder handle position",
+    "length": undefined,
+    "mapping": undefined,
+    "name": "waterRudderHandlePosition",
+    "permission": "rw",
+    "type": 6,
+    "value": 10888,
+  },
+}
+`;

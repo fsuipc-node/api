@@ -299,6 +299,17 @@ Object {
     "type": 2,
     "value": 2804,
   },
+  "selectedFuelTransferMode": Offset {
+    "category": "fuel",
+    "convert": "fuelTransferMode",
+    "description": "selected fuel transfer mode",
+    "length": undefined,
+    "mapping": true,
+    "name": "selectedFuelTransferMode",
+    "permission": "r",
+    "type": 6,
+    "value": 12120,
+  },
   "totalFuelCapacity": Offset {
     "category": "fuel",
     "convert": undefined,

@@ -200,6 +200,17 @@ Object {
     "type": 8,
     "value": 10304,
   },
+  "masterAvionicsSwitch": Offset {
+    "category": "electric",
+    "convert": "!!{VAL}",
+    "description": "master avionics switch",
+    "length": undefined,
+    "mapping": undefined,
+    "name": "masterAvionicsSwitch",
+    "permission": "rw",
+    "type": 6,
+    "value": 11904,
+  },
   "masterBatterySwitch": Offset {
     "category": "electric",
     "convert": "!!{VAL}",

@@ -1,4 +1,5 @@
 export enum OffsetCategory {
+  AERODYNAMICS = 'aerodynamics',
   APU = 'APU',
   AUTOPILOT = 'autopilot',
   COCKPIT = 'cockpit',
@@ -9,6 +10,7 @@ export enum OffsetCategory {
   FAILURE = 'failure',
   FUEL = 'fuel',
   HELICOPTER = 'helicopter',
+  HYDRAULIC = 'hydraulic',
   ICING = 'icing',
   PLANE = 'plane',
   POSITION_ATTITUDE = 'position_attitude',
@@ -16,6 +18,8 @@ export enum OffsetCategory {
   PUSHBACK = 'pushback',
   RADIOS = 'radios',
   RUNWAY = 'runway',
+  SEAPLANE = 'seaplane',
   SIMULATION = 'simulation',
+  WB = 'WB',
   WEATHER = 'weather',
 }

@@ -243,4 +243,14 @@ export const fuel: OffsetList = {
     type: Type.Int32,
     permission: 'r',
   }),
+  selectedFuelTransferMode: new Offset({
+    value: 0x2F58,
+    name: 'selectedFuelTransferMode',
+    category: OffsetCategory.FUEL,
+    description: 'selected fuel transfer mode',
+    convert: 'fuelTransferMode',
+    mapping: true,
+    type: Type.UInt32,
+    permission: 'r',
+  }),
 };

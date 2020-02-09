@@ -1,12 +1,11 @@
-import { electric as offsets } from '@offsets/plane/electric';
+import { seaplane as offsets } from '@offsets/plane/seaplane';
 import { replaceOffsetExpressionValue } from '@convert/apply-conversion';
 
-describe('offset - plane/electric', () => {
+describe('offset - plane/seaplane', () => {
   const offsetsTestCases = [
-    { name: 'masterBatterySwitch', value: 0, expectedResult: false },
-    { name: 'masterBatterySwitch', value: 1, expectedResult: true },
-    { name: 'masterAvionicsSwitch', value: 0, expectedResult: false },
-    { name: 'masterAvionicsSwitch', value: 1, expectedResult: true },
+    { name: 'retractableLeftFloatExtension', value: 13200, expectedResult: 80 },
+    { name: 'retractableRightFloatExtension', value: 13200, expectedResult: 80 },
+    { name: 'waterRudderHandlePosition', value: 13200, expectedResult: 80 },
   ];
 
   describe('offsets list', () => {

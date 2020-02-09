@@ -14,6 +14,9 @@ describe('offset - plane/helicopter', () => {
     { name: 'helicopterPitchTrim', value: -16000, expectedResult: -98 },
     { name: 'helicopterBankTrim', value: 16383, expectedResult: 100 },
     { name: 'helicopterBankTrim', value: -16383, expectedResult: -100 },
+    { name: 'helicopterBeep', value: 0, expectedResult: false },
+    { name: 'helicopterBeep', value: 1, expectedResult: true },
+    { name: 'helicopterBeep', value: 16000, expectedResult: true },
   ];
 
   describe('offsets list', () => {

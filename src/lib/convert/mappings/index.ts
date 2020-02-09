@@ -12,6 +12,8 @@ import { vorToFrom } from './vor-to-from';
 import { navBackCourseFlags } from './nav-back-course-flags';
 import { navCapabilities } from './nav-capabilities';
 import { fuelTank } from './fuel-tank';
+import { fuelTransferMode } from './fuel-transfer-mode';
+import { autoBrake } from './autobrake';
 
 export const MAPPINGS: { [key: string]: (_: any) => any } = {
   lightsMapping,
@@ -31,6 +33,8 @@ export const MAPPINGS: { [key: string]: (_: any) => any } = {
   appliedBrakes,
   spoilersControl,
   fuelTank,
+  fuelTransferMode,
+  autoBrake,
 
   // environment
   nearestAirportsIds,
@@ -53,3 +57,5 @@ export * from './vor-to-from';
 export * from './nav-back-course-flags';
 export * from './nav-capabilities';
 export * from './fuel-tank';
+export * from './fuel-transfer-mode';
+export * from './autobrake';

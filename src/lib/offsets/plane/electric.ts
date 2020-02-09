@@ -166,4 +166,13 @@ export const electric: OffsetList = {
     type: Type.Double,
     permission: 'r',
   }),
+  masterAvionicsSwitch: new Offset({
+    value: 0x2E80,
+    name: 'masterAvionicsSwitch',
+    category: OffsetCategory.ELECTRIC,
+    description: 'master avionics switch',
+    convert: '!!{VAL}',
+    type: Type.UInt32,
+    permission: 'rw',
+  }),
 };
