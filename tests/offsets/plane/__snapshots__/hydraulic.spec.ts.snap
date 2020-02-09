@@ -90,5 +90,16 @@ Object {
     "type": 8,
     "value": 11804,
   },
+  "hydSystemIntegrity": Offset {
+    "category": "hydraulic",
+    "convert": "doublePercentRound",
+    "description": "hydraulic system integrity - percent",
+    "length": undefined,
+    "mapping": true,
+    "name": "hydSystemIntegrity",
+    "permission": "r",
+    "type": 8,
+    "value": 12128,
+  },
 }
 `;

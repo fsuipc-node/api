@@ -272,4 +272,20 @@ export const autopilot: OffsetList = {
     type: Type.UInt32,
     permission: 'r',
   }),
+  apMaxSpeed: new Offset({
+    value: 0x2F40,
+    name: 'apMaxSpeed',
+    category: OffsetCategory.AUTOPILOT,
+    description: 'AP max speed',
+    type: Type.Double,
+    permission: 'r',
+  }),
+  apCruiseSpeed: new Offset({
+    value: 0x2F48,
+    name: 'apCruiseSpeed',
+    category: OffsetCategory.AUTOPILOT,
+    description: 'AP cruise speed',
+    type: Type.Double,
+    permission: 'r',
+  }),
 };

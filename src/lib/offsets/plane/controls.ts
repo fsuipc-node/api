@@ -478,7 +478,7 @@ export const controls: OffsetList = {
     category: OffsetCategory.CONTROLS,
     description: 'flight director pitch - degrees',
     type: Type.Double,
-    permission: 'rw',
+    permission: 'r',
   }),
   flightDirectorBank: new Offset({
     value: 0x2EF0,
@@ -486,6 +486,24 @@ export const controls: OffsetList = {
     category: OffsetCategory.CONTROLS,
     description: 'flight director bank - degrees',
     type: Type.Double,
+    permission: 'r',
+  }),
+  gearPosTail: new Offset({
+    value: 0x2F38,
+    name: 'gearPosTail',
+    category: OffsetCategory.CONTROLS,
+    description: 'gear pos tail',
+    type: Type.Double,
+    permission: 'r',
+  }),
+  autoBrakeSwitch: new Offset({
+    value: 0x2F80,
+    name: 'autoBrakeSwitch',
+    category: OffsetCategory.CONTROLS,
+    description: 'auto brake switch',
+    convert: 'autoBrake',
+    mapping: true,
+    type: Type.SByte,
     permission: 'rw',
   }),
 };

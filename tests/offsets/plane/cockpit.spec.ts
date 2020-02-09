@@ -37,6 +37,8 @@ describe('offset - plane/cockpit', () => {
     { name: 'standbyVacuumCircuitActive', value: 1, expectedResult: true },
     { name: 'propSyncActive', value: 0, expectedResult: false },
     { name: 'propSyncActive', value: 1, expectedResult: true },
+    { name: 'attitudeCageButton', value: 0, expectedResult: false },
+    { name: 'attitudeCageButton', value: 1, expectedResult: true },
   ];
 
   describe('offsets list', () => {

@@ -77,4 +77,14 @@ export const hydraulic: OffsetList = {
     type: Type.Double,
     permission: 'r',
   }),
+  hydSystemIntegrity: new Offset({
+    value: 0x2F60,
+    name: 'hydSystemIntegrity',
+    category: OffsetCategory.HYDRAULIC,
+    description: 'hydraulic system integrity - percent',
+    convert: 'doublePercentRound',
+    mapping: true,
+    type: Type.Double,
+    permission: 'r',
+  }),
 };
