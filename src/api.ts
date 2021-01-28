@@ -13,13 +13,17 @@ export class FsuipcApi {
   private fsuipc: FSUIPC;
   private watchedOffsetCache: any[] = [];
 
-  constructor(private simulator: Simulator = Simulator.FSX) {}
+  constructor(private simulator: Simulator | undefined = undefined) {}
 
   public async init() {
     this.fsuipcGlobalInstance = new FSUIPC();
 
     try {
-      this.fsuipc = await this.fsuipcGlobalInstance.open(this.simulator);
+      if (this.simulator){
+        this.fsuipc = await this.fsuipcGlobalInstance.open(this.simulator);
+      } else {
+        this.fsuipc = await this.fsuipcGlobalInstance.open();
+      }
       return true;
     } catch (error) {
       throw new FSUIPCError(error.message, error.code);
