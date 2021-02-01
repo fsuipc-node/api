@@ -1,3 +1,12 @@
+## [0.4.1](https://github.com/fsuipc-node/api/compare/0.4.0...0.4.1) (2021-02-01)
+
+
+### Bug Fixes
+
+* allow connexion to MSFS ([#9](https://github.com/fsuipc-node/api/issues/9)) ([9b21f19](https://github.com/fsuipc-node/api/commit/9b21f197cb6a9ef8eceee7d85e3f6b3f0a5c20aa))
+
+
+
 # [0.4.0](https://github.com/fsuipc-node/api/compare/0.3.0...0.4.0) (2020-02-04)
 
 
