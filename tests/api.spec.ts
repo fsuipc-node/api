@@ -37,8 +37,8 @@ jest.mock('fsuipc', () => {
   return {
     FSUIPC: jest.fn().mockImplementation(() => {
       return {
-        open: jest.fn().mockImplementation((simulator) => {
-          if (simulator === SimulatorMock.FSX) {
+        open: jest.fn().mockImplementation((simulator?) => {
+          if (simulator !== SimulatorMock.P3D64) {
             return Promise.resolve({
               process: processMock,
               add: addMock,
@@ -163,9 +163,9 @@ describe('FSUIPC Api', () => {
       expect(instance['simulator']).toEqual(SimulatorMock.P3D64);
     });
 
-    it('should create instance with FSX by default when no simulator provided', () => {
+    it('should create instance with any Simulator by default when no simulator provided', () => {
       const instance = new FsuipcApi();
-      expect(instance['simulator']).toEqual(SimulatorMock.FSX);
+      expect(instance['simulator']).toEqual(undefined);
     });
   });
 
