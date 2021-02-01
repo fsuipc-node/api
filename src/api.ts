@@ -13,7 +13,7 @@ export class FsuipcApi {
   private fsuipc: FSUIPC;
   private watchedOffsetCache: any[] = [];
 
-  constructor(private simulator: Simulator | undefined = undefined) {}
+  constructor(private simulator?: Simulator) {}
 
   public async init() {
     this.fsuipcGlobalInstance = new FSUIPC();
