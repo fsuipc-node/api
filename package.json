@@ -6,8 +6,8 @@
     "url": "https://github.com/fsuipc-node"
   },
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/fsuipc-node/api"
+    "type": "git",
+    "url": "https://github.com/fsuipc-node/api"
   },
   "homepage": "https://github.com/fsuipc-node",
   "license": "MIT",
@@ -28,13 +28,11 @@
     "changelog:generate": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
   },
   "dependencies": {
-    "fsuipc": "0.3.0",
-    "rxjs": "6.5.4",
-    "vm2": "3.8.4"
+    "fsuipc": "^0.5.0",
+    "rxjs": "^7.5.6",
+    "vm2": "^3.8.0"
   },
   "peerDependencies": {
-    "fsuipc": "^0.3.0",
-    "rxjs": "^6.5.0",
     "vm2": "^3.8.0"
   },
   "devDependencies": {
